@@ -77,16 +77,16 @@
       "type": "event"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"id_\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"email\",\"type\":\"string\"}],\"name\":\"CustomerAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"id_\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"email\",\"type\":\"string\"}],\"name\":\"CustomerDataUpdated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"id_\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"customerName\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"dataHash\",\"type\":\"string\"}],\"name\":\"DataHashUpdated\",\"type\":\"event\"}],\"devdoc\":{\"author\":\"Suresh Konakanchi\",\"details\":\"Library for managing all customers, who are involved in the KYC process\",\"kind\":\"dev\",\"methods\":{},\"title\":\"Customers\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Customers.sol\":\"Customers\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Customers.sol\":{\"keccak256\":\"0x12de7bd7e4d30fa2e18f0537c869929c915bdfc4a020b6f81c9e18936027db68\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://234b7333a96a2ff716c5058e104ba811f6cd0004afe2765747d3df8fd139f5d5\",\"dweb:/ipfs/QmRc2Ji6NZbfHnRX1ceUYCoiru7PEbvBpDKnAatGgXxqtQ\"]},\"project:/contracts/Helpers.sol\":{\"keccak256\":\"0x7da8f842dd148dacae8b7a2e2f1231c4890ccd1fd4651d83d44f2e073fdfb7ee\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://8bb126eb7370f578d6c95db87ffc60397cd51f3ca47e273610be2c5e433dfd7f\",\"dweb:/ipfs/QmbKUAS18MNSnGcN8ZGofki3NXuuGZAjZgJfUA3V4VLdmp\"]},\"project:/contracts/Types.sol\":{\"keccak256\":\"0x405d007af31883db79618a5f2bb9b7af944a9a82de4fca3eea4d273f6155f06a\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://7fc88303b1ad8643bc0bd16fcd241a873410f57a226392c5027ecf83313b0df9\",\"dweb:/ipfs/QmT6pwj4pdZgVUsZUx8GPzVnd7VppvR3wd93xRB2QJr1j9\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220b8e5c81fd0bf1b29e6e42897f173b59aee00dab190585ffcb6c3b3e17da7820f64736f6c63430008130033",
-  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220b8e5c81fd0bf1b29e6e42897f173b59aee00dab190585ffcb6c3b3e17da7820f64736f6c63430008130033",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"id_\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"email\",\"type\":\"string\"}],\"name\":\"CustomerAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"id_\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"email\",\"type\":\"string\"}],\"name\":\"CustomerDataUpdated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"id_\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"customerName\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"dataHash\",\"type\":\"string\"}],\"name\":\"DataHashUpdated\",\"type\":\"event\"}],\"devdoc\":{\"author\":\"Suresh Konakanchi\",\"details\":\"Library for managing all customers, who are involved in the KYC process\",\"kind\":\"dev\",\"methods\":{},\"title\":\"Customers\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Customers.sol\":\"Customers\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Customers.sol\":{\"keccak256\":\"0x12de7bd7e4d30fa2e18f0537c869929c915bdfc4a020b6f81c9e18936027db68\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://234b7333a96a2ff716c5058e104ba811f6cd0004afe2765747d3df8fd139f5d5\",\"dweb:/ipfs/QmRc2Ji6NZbfHnRX1ceUYCoiru7PEbvBpDKnAatGgXxqtQ\"]},\"project:/contracts/Helpers.sol\":{\"keccak256\":\"0x7da8f842dd148dacae8b7a2e2f1231c4890ccd1fd4651d83d44f2e073fdfb7ee\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://8bb126eb7370f578d6c95db87ffc60397cd51f3ca47e273610be2c5e433dfd7f\",\"dweb:/ipfs/QmbKUAS18MNSnGcN8ZGofki3NXuuGZAjZgJfUA3V4VLdmp\"]},\"project:/contracts/Types.sol\":{\"keccak256\":\"0x405d007af31883db79618a5f2bb9b7af944a9a82de4fca3eea4d273f6155f06a\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://7fc88303b1ad8643bc0bd16fcd241a873410f57a226392c5027ecf83313b0df9\",\"dweb:/ipfs/QmT6pwj4pdZgVUsZUx8GPzVnd7VppvR3wd93xRB2QJr1j9\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212206ad1d8896b1ac7d32038128498a97c1173285b4fa2dfaf8c94599e7f86ca383864736f6c63430008040033",
+  "deployedBytecode": "0x6080604052600080fdfea26469706673582212206ad1d8896b1ac7d32038128498a97c1173285b4fa2dfaf8c94599e7f86ca383864736f6c63430008040033",
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [],
   "sourceMap": "300:4313:1:-:0;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "300:4313:1:-:0;;;;;",
   "source": "// SPDX-License-Identifier: GPL-3.0\r\npragma experimental ABIEncoderV2;\r\npragma solidity >=0.4.25 <0.9.0;\r\n\r\nimport \"./Types.sol\";\r\nimport \"./Helpers.sol\";\r\n\r\n/**\r\n * @title Customers\r\n * @author Suresh Konakanchi\r\n * @dev Library for managing all customers, who are involved in the KYC process\r\n */\r\ncontract Customers {\r\n    address[] internal customerList;\r\n    mapping(address => Types.Customer) internal customers;\r\n\r\n    // Events\r\n\r\n    event CustomerAdded(address id_, string name, string email);\r\n    event CustomerDataUpdated(address id_, string name, string email);\r\n    event DataHashUpdated(address id_, string customerName, string dataHash);\r\n\r\n    // Modifiers\r\n\r\n    /**\r\n     * @notice Checks whether customer already exists\r\n     * @param id_ Metamask address of the customer\r\n     */\r\n    modifier isValidCustomer(address id_) {\r\n        require(id_ != address(0), \"Id is Empty\");\r\n        require(customers[id_].id_ != address(0), \"User Id Empty\");\r\n        require(\r\n            !Helpers.compareStrings(customers[id_].email, \"\"),\r\n            \"User Email Empty\"\r\n        );\r\n        _;\r\n    }\r\n\r\n    // Support Functions\r\n\r\n    /**\r\n     * @notice Checks whether customer already exists\r\n     * @param id_ Metamask address of the customer\r\n     * @return exists_ boolean value to say if customer exists or not\r\n     */\r\n    function customerExists(address id_) internal view returns (bool exists_) {\r\n        require(id_ != address(0), \"Id is empty\");\r\n        if (\r\n            customers[id_].id_ != address(0) &&\r\n            !Helpers.compareStrings(customers[id_].email, \"\")\r\n        ) {\r\n            exists_ = true;\r\n        }\r\n    }\r\n\r\n    // Contract Functions\r\n\r\n    /**\r\n     * @dev To get details of the customer\r\n     * @param id_ Customer's metamask address\r\n     * @return Customer object which will have complete details of the customer\r\n     */\r\n    function getcustomerdetails(address id_)\r\n        internal\r\n        view\r\n        returns (Types.Customer memory)\r\n    {\r\n        return customers[id_];\r\n    }\r\n\r\n    /**\r\n     * @dev Updates the user profile\r\n     * @param name_ Customer name\r\n     * @param email_ Email that need to be updated\r\n     * @param mobile_ Mobile number that need to be updated\r\n     */\r\n    function updateprofile(\r\n        string memory name_,\r\n        string memory email_,\r\n        uint256 mobile_\r\n    ) internal {\r\n        customers[msg.sender].name = name_;\r\n        customers[msg.sender].email = email_;\r\n        customers[msg.sender].mobileNumber = mobile_;\r\n        emit CustomerDataUpdated(msg.sender, name_, email_);\r\n    }\r\n\r\n    /**\r\n     * @dev Add new customer\r\n     * @param customer_ Customer object\r\n     */\r\n    function addcustomer(Types.Customer memory customer_) internal {\r\n        customers[customer_.id_] = customer_;\r\n        customerList.push(customer_.id_);\r\n        emit CustomerAdded(customer_.id_, customer_.name, customer_.email);\r\n    }\r\n\r\n    /**\r\n     * @dev To Update KYC verification bank\r\n     * @param id_ Customer's metamask ID\r\n     */\r\n    function updatekycdoneby(address id_) internal {\r\n        require(id_ != address(0), \"Customer Id Empty\");\r\n        customers[id_].kycVerifiedBy = msg.sender;\r\n    }\r\n\r\n    /**\r\n     * @dev Updates the Datahash of the documents\r\n     * @param hash_ Data hash value that need to be updated\r\n     * @param currentTime_ Current Date Time in unix epoch timestamp\r\n     */\r\n    function updatedatahash(string memory hash_, uint256 currentTime_)\r\n        internal\r\n    {\r\n        customers[msg.sender].dataHash = hash_;\r\n        customers[msg.sender].dataUpdatedOn = currentTime_;\r\n        emit DataHashUpdated(msg.sender, customers[msg.sender].name, hash_);\r\n    }\r\n\r\n    /**\r\n     * @dev Search for customer details in the list that the bank is directly linked to\r\n     * @param id_ Customer's metamask Id\r\n     * @param customers_ Customer metamask Id's\r\n     * @return boolean to say if customer exists or not\r\n     * @return Customer object to get the complete details of the customer\r\n     * Costly operation if we had more customers linked to this single bank\r\n     */\r\n    function searchcustomers(address id_, address[] memory customers_)\r\n        internal\r\n        view\r\n        returns (bool, Types.Customer memory)\r\n    {\r\n        bool found_;\r\n        Types.Customer memory customer_;\r\n\r\n        for (uint256 i = 0; i < customers_.length; i++) {\r\n            if (customers_[i] == id_) {\r\n                found_ = true;\r\n                customer_ = customers[id_];\r\n                break;\r\n            }\r\n        }\r\n        return (found_, customer_);\r\n    }\r\n}\r\n",
-  "sourcePath": "C:\\Users\\alokk\\Desktop\\learning blockchain\\kyc2\\blockchain\\contracts\\Customers.sol",
+  "sourcePath": "C:\\Users\\alokk\\Desktop\\Learning\\learning blockchain\\kyc2\\blockchain\\contracts\\Customers.sol",
   "ast": {
     "absolutePath": "project:/contracts/Customers.sol",
     "exportedSymbols": {
@@ -97,7 +97,7 @@
         869
       ],
       "Types": [
-        2153
+        2273
       ]
     },
     "id": 728,
@@ -134,7 +134,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 728,
-        "sourceUnit": 2154,
+        "sourceUnit": 2274,
         "src": "108:21:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -154,7 +154,6 @@
       {
         "abstract": false,
         "baseContracts": [],
-        "canonicalName": "Customers",
         "contractDependencies": [],
         "contractKind": "contract",
         "documentation": {
@@ -221,13 +220,11 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2115_storage_$",
+              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2235_storage_$",
               "typeString": "mapping(address => struct Types.Customer)"
             },
             "typeName": {
               "id": 407,
-              "keyName": "",
-              "keyNameLocation": "-1:-1:-1",
               "keyType": {
                 "id": 404,
                 "name": "address",
@@ -241,29 +238,23 @@
               "nodeType": "Mapping",
               "src": "364:34:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2115_storage_$",
+                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2235_storage_$",
                 "typeString": "mapping(address => struct Types.Customer)"
               },
-              "valueName": "",
-              "valueNameLocation": "-1:-1:-1",
               "valueType": {
                 "id": 406,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
                   "id": 405,
                   "name": "Types.Customer",
-                  "nameLocations": [
-                    "383:5:1",
-                    "389:8:1"
-                  ],
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 2115,
+                  "referencedDeclaration": 2235,
                   "src": "383:14:1"
                 },
-                "referencedDeclaration": 2115,
+                "referencedDeclaration": 2235,
                 "src": "383:14:1",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_Customer_$2115_storage_ptr",
+                  "typeIdentifier": "t_struct$_Customer_$2235_storage_ptr",
                   "typeString": "struct Types.Customer"
                 }
               }
@@ -272,7 +263,6 @@
           },
           {
             "anonymous": false,
-            "eventSelector": "77eacb4962819f791ebd2750d7be9519622ddcf4c37fe09c6fd33ace5ce32ccb",
             "id": 416,
             "name": "CustomerAdded",
             "nameLocation": "449:13:1",
@@ -373,7 +363,6 @@
           },
           {
             "anonymous": false,
-            "eventSelector": "cfc84fa73e8500b1f994b7616fda16714aa77352defd398c17f8dda41cc92195",
             "id": 424,
             "name": "CustomerDataUpdated",
             "nameLocation": "515:19:1",
@@ -474,7 +463,6 @@
           },
           {
             "anonymous": false,
-            "eventSelector": "844d9124dad5a413c4b99664397291f93f1e89513cd8c3a68674c050283c5561",
             "id": 432,
             "name": "DataHashUpdated",
             "nameLocation": "587:15:1",
@@ -657,7 +645,6 @@
                           "isPure": true,
                           "kind": "typeConversion",
                           "lValueRequested": false,
-                          "nameLocations": [],
                           "names": [],
                           "nodeType": "FunctionCall",
                           "src": "871:10:1",
@@ -721,7 +708,6 @@
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
-                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "856:41:1",
@@ -758,7 +744,7 @@
                               "referencedDeclaration": 408,
                               "src": "916:9:1",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2115_storage_$",
+                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2235_storage_$",
                                 "typeString": "mapping(address => struct Types.Customer storage ref)"
                               }
                             },
@@ -782,7 +768,7 @@
                             "nodeType": "IndexAccess",
                             "src": "916:14:1",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Customer_$2115_storage",
+                              "typeIdentifier": "t_struct$_Customer_$2235_storage",
                               "typeString": "struct Types.Customer storage ref"
                             }
                           },
@@ -791,10 +777,9 @@
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
-                          "memberLocation": "931:3:1",
                           "memberName": "id_",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 2108,
+                          "referencedDeclaration": 2228,
                           "src": "916:18:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -854,7 +839,6 @@
                           "isPure": true,
                           "kind": "typeConversion",
                           "lValueRequested": false,
-                          "nameLocations": [],
                           "names": [],
                           "nodeType": "FunctionCall",
                           "src": "938:10:1",
@@ -918,7 +902,6 @@
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
-                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "908:58:1",
@@ -957,7 +940,7 @@
                                   "referencedDeclaration": 408,
                                   "src": "1023:9:1",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2115_storage_$",
+                                    "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2235_storage_$",
                                     "typeString": "mapping(address => struct Types.Customer storage ref)"
                                   }
                                 },
@@ -981,7 +964,7 @@
                                 "nodeType": "IndexAccess",
                                 "src": "1023:14:1",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_Customer_$2115_storage",
+                                  "typeIdentifier": "t_struct$_Customer_$2235_storage",
                                   "typeString": "struct Types.Customer storage ref"
                                 }
                               },
@@ -990,10 +973,9 @@
                               "isLValue": true,
                               "isPure": false,
                               "lValueRequested": false,
-                              "memberLocation": "1038:5:1",
                               "memberName": "email",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 2104,
+                              "referencedDeclaration": 2224,
                               "src": "1023:20:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_string_storage",
@@ -1045,7 +1027,6 @@
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
-                            "memberLocation": "1008:14:1",
                             "memberName": "compareStrings",
                             "nodeType": "MemberAccess",
                             "referencedDeclaration": 848,
@@ -1061,7 +1042,6 @@
                           "isPure": false,
                           "kind": "functionCall",
                           "lValueRequested": false,
-                          "nameLocations": [],
                           "names": [],
                           "nodeType": "FunctionCall",
                           "src": "1000:48:1",
@@ -1124,7 +1104,6 @@
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
-                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "977:115:1",
@@ -1278,7 +1257,6 @@
                           "isPure": true,
                           "kind": "typeConversion",
                           "lValueRequested": false,
-                          "nameLocations": [],
                           "names": [],
                           "nodeType": "FunctionCall",
                           "src": "1444:10:1",
@@ -1342,7 +1320,6 @@
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
-                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "1429:41:1",
@@ -1387,7 +1364,7 @@
                             "referencedDeclaration": 408,
                             "src": "1499:9:1",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2115_storage_$",
+                              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2235_storage_$",
                               "typeString": "mapping(address => struct Types.Customer storage ref)"
                             }
                           },
@@ -1411,7 +1388,7 @@
                           "nodeType": "IndexAccess",
                           "src": "1499:14:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Customer_$2115_storage",
+                            "typeIdentifier": "t_struct$_Customer_$2235_storage",
                             "typeString": "struct Types.Customer storage ref"
                           }
                         },
@@ -1420,10 +1397,9 @@
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
-                        "memberLocation": "1514:3:1",
                         "memberName": "id_",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2108,
+                        "referencedDeclaration": 2228,
                         "src": "1499:18:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -1483,7 +1459,6 @@
                         "isPure": true,
                         "kind": "typeConversion",
                         "lValueRequested": false,
-                        "nameLocations": [],
                         "names": [],
                         "nodeType": "FunctionCall",
                         "src": "1521:10:1",
@@ -1523,7 +1498,7 @@
                                 "referencedDeclaration": 408,
                                 "src": "1572:9:1",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2115_storage_$",
+                                  "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2235_storage_$",
                                   "typeString": "mapping(address => struct Types.Customer storage ref)"
                                 }
                               },
@@ -1547,7 +1522,7 @@
                               "nodeType": "IndexAccess",
                               "src": "1572:14:1",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Customer_$2115_storage",
+                                "typeIdentifier": "t_struct$_Customer_$2235_storage",
                                 "typeString": "struct Types.Customer storage ref"
                               }
                             },
@@ -1556,10 +1531,9 @@
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
-                            "memberLocation": "1587:5:1",
                             "memberName": "email",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 2104,
+                            "referencedDeclaration": 2224,
                             "src": "1572:20:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_string_storage",
@@ -1611,7 +1585,6 @@
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
-                          "memberLocation": "1557:14:1",
                           "memberName": "compareStrings",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": 848,
@@ -1627,7 +1600,6 @@
                         "isPure": false,
                         "kind": "functionCall",
                         "lValueRequested": false,
-                        "nameLocations": [],
                         "names": [],
                         "nodeType": "FunctionCall",
                         "src": "1549:48:1",
@@ -1812,7 +1784,7 @@
                       "referencedDeclaration": 408,
                       "src": "2021:9:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2115_storage_$",
+                        "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2235_storage_$",
                         "typeString": "mapping(address => struct Types.Customer storage ref)"
                       }
                     },
@@ -1836,7 +1808,7 @@
                     "nodeType": "IndexAccess",
                     "src": "2021:14:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Customer_$2115_storage",
+                      "typeIdentifier": "t_struct$_Customer_$2235_storage",
                       "typeString": "struct Types.Customer storage ref"
                     }
                   },
@@ -1911,7 +1883,7 @@
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Customer_$2115_memory_ptr",
+                    "typeIdentifier": "t_struct$_Customer_$2235_memory_ptr",
                     "typeString": "struct Types.Customer"
                   },
                   "typeName": {
@@ -1920,18 +1892,14 @@
                     "pathNode": {
                       "id": 524,
                       "name": "Types.Customer",
-                      "nameLocations": [
-                        "1975:5:1",
-                        "1981:8:1"
-                      ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 2115,
+                      "referencedDeclaration": 2235,
                       "src": "1975:14:1"
                     },
-                    "referencedDeclaration": 2115,
+                    "referencedDeclaration": 2235,
                     "src": "1975:14:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Customer_$2115_storage_ptr",
+                      "typeIdentifier": "t_struct$_Customer_$2235_storage_ptr",
                       "typeString": "struct Types.Customer"
                     }
                   },
@@ -1969,7 +1937,7 @@
                           "referencedDeclaration": 408,
                           "src": "2392:9:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2115_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2235_storage_$",
                             "typeString": "mapping(address => struct Types.Customer storage ref)"
                           }
                         },
@@ -1992,7 +1960,6 @@
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
-                          "memberLocation": "2406:6:1",
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
                           "src": "2402:10:1",
@@ -2008,7 +1975,7 @@
                         "nodeType": "IndexAccess",
                         "src": "2392:21:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Customer_$2115_storage",
+                          "typeIdentifier": "t_struct$_Customer_$2235_storage",
                           "typeString": "struct Types.Customer storage ref"
                         }
                       },
@@ -2017,10 +1984,9 @@
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
-                      "memberLocation": "2414:4:1",
                       "memberName": "name",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2102,
+                      "referencedDeclaration": 2222,
                       "src": "2392:26:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
@@ -2068,7 +2034,7 @@
                           "referencedDeclaration": 408,
                           "src": "2437:9:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2115_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2235_storage_$",
                             "typeString": "mapping(address => struct Types.Customer storage ref)"
                           }
                         },
@@ -2091,7 +2057,6 @@
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
-                          "memberLocation": "2451:6:1",
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
                           "src": "2447:10:1",
@@ -2107,7 +2072,7 @@
                         "nodeType": "IndexAccess",
                         "src": "2437:21:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Customer_$2115_storage",
+                          "typeIdentifier": "t_struct$_Customer_$2235_storage",
                           "typeString": "struct Types.Customer storage ref"
                         }
                       },
@@ -2116,10 +2081,9 @@
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
-                      "memberLocation": "2459:5:1",
                       "memberName": "email",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2104,
+                      "referencedDeclaration": 2224,
                       "src": "2437:27:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
@@ -2167,7 +2131,7 @@
                           "referencedDeclaration": 408,
                           "src": "2484:9:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2115_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2235_storage_$",
                             "typeString": "mapping(address => struct Types.Customer storage ref)"
                           }
                         },
@@ -2190,7 +2154,6 @@
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
-                          "memberLocation": "2498:6:1",
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
                           "src": "2494:10:1",
@@ -2206,7 +2169,7 @@
                         "nodeType": "IndexAccess",
                         "src": "2484:21:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Customer_$2115_storage",
+                          "typeIdentifier": "t_struct$_Customer_$2235_storage",
                           "typeString": "struct Types.Customer storage ref"
                         }
                       },
@@ -2215,10 +2178,9 @@
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
-                      "memberLocation": "2506:12:1",
                       "memberName": "mobileNumber",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2106,
+                      "referencedDeclaration": 2226,
                       "src": "2484:34:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2270,7 +2232,6 @@
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
-                        "memberLocation": "2568:6:1",
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "src": "2564:10:1",
@@ -2336,7 +2297,6 @@
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
-                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "2544:46:1",
@@ -2487,7 +2447,7 @@
                         "referencedDeclaration": 408,
                         "src": "2769:9:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2115_storage_$",
+                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2235_storage_$",
                           "typeString": "mapping(address => struct Types.Customer storage ref)"
                         }
                       },
@@ -2501,7 +2461,7 @@
                           "referencedDeclaration": 579,
                           "src": "2779:9:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Customer_$2115_memory_ptr",
+                            "typeIdentifier": "t_struct$_Customer_$2235_memory_ptr",
                             "typeString": "struct Types.Customer memory"
                           }
                         },
@@ -2510,10 +2470,9 @@
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
-                        "memberLocation": "2789:3:1",
                         "memberName": "id_",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2108,
+                        "referencedDeclaration": 2228,
                         "src": "2779:13:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -2527,7 +2486,7 @@
                       "nodeType": "IndexAccess",
                       "src": "2769:24:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Customer_$2115_storage",
+                        "typeIdentifier": "t_struct$_Customer_$2235_storage",
                         "typeString": "struct Types.Customer storage ref"
                       }
                     },
@@ -2541,13 +2500,13 @@
                       "referencedDeclaration": 579,
                       "src": "2796:9:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Customer_$2115_memory_ptr",
+                        "typeIdentifier": "t_struct$_Customer_$2235_memory_ptr",
                         "typeString": "struct Types.Customer memory"
                       }
                     },
                     "src": "2769:36:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Customer_$2115_storage",
+                      "typeIdentifier": "t_struct$_Customer_$2235_storage",
                       "typeString": "struct Types.Customer storage ref"
                     }
                   },
@@ -2567,7 +2526,7 @@
                           "referencedDeclaration": 579,
                           "src": "2834:9:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Customer_$2115_memory_ptr",
+                            "typeIdentifier": "t_struct$_Customer_$2235_memory_ptr",
                             "typeString": "struct Types.Customer memory"
                           }
                         },
@@ -2576,10 +2535,9 @@
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
-                        "memberLocation": "2844:3:1",
                         "memberName": "id_",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2108,
+                        "referencedDeclaration": 2228,
                         "src": "2834:13:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -2611,12 +2569,11 @@
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
-                      "memberLocation": "2829:4:1",
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "src": "2816:17:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_address_$dyn_storage_ptr_$_t_address_$returns$__$attached_to$_t_array$_t_address_$dyn_storage_ptr_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_address_$dyn_storage_ptr_$_t_address_$returns$__$bound_to$_t_array$_t_address_$dyn_storage_ptr_$",
                         "typeString": "function (address[] storage pointer,address)"
                       }
                     },
@@ -2626,7 +2583,6 @@
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
-                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "2816:32:1",
@@ -2652,7 +2608,7 @@
                           "referencedDeclaration": 579,
                           "src": "2878:9:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Customer_$2115_memory_ptr",
+                            "typeIdentifier": "t_struct$_Customer_$2235_memory_ptr",
                             "typeString": "struct Types.Customer memory"
                           }
                         },
@@ -2661,10 +2617,9 @@
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
-                        "memberLocation": "2888:3:1",
                         "memberName": "id_",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2108,
+                        "referencedDeclaration": 2228,
                         "src": "2878:13:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -2680,7 +2635,7 @@
                           "referencedDeclaration": 579,
                           "src": "2893:9:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Customer_$2115_memory_ptr",
+                            "typeIdentifier": "t_struct$_Customer_$2235_memory_ptr",
                             "typeString": "struct Types.Customer memory"
                           }
                         },
@@ -2689,10 +2644,9 @@
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
-                        "memberLocation": "2903:4:1",
                         "memberName": "name",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2102,
+                        "referencedDeclaration": 2222,
                         "src": "2893:14:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -2708,7 +2662,7 @@
                           "referencedDeclaration": 579,
                           "src": "2909:9:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Customer_$2115_memory_ptr",
+                            "typeIdentifier": "t_struct$_Customer_$2235_memory_ptr",
                             "typeString": "struct Types.Customer memory"
                           }
                         },
@@ -2717,10 +2671,9 @@
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
-                        "memberLocation": "2919:5:1",
                         "memberName": "email",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2104,
+                        "referencedDeclaration": 2224,
                         "src": "2909:15:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -2760,7 +2713,6 @@
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
-                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "2864:61:1",
@@ -2805,7 +2757,7 @@
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Customer_$2115_memory_ptr",
+                    "typeIdentifier": "t_struct$_Customer_$2235_memory_ptr",
                     "typeString": "struct Types.Customer"
                   },
                   "typeName": {
@@ -2814,18 +2766,14 @@
                     "pathNode": {
                       "id": 577,
                       "name": "Types.Customer",
-                      "nameLocations": [
-                        "2716:5:1",
-                        "2722:8:1"
-                      ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 2115,
+                      "referencedDeclaration": 2235,
                       "src": "2716:14:1"
                     },
-                    "referencedDeclaration": 2115,
+                    "referencedDeclaration": 2235,
                     "src": "2716:14:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Customer_$2115_storage_ptr",
+                      "typeIdentifier": "t_struct$_Customer_$2235_storage_ptr",
                       "typeString": "struct Types.Customer"
                     }
                   },
@@ -2930,7 +2878,6 @@
                           "isPure": true,
                           "kind": "typeConversion",
                           "lValueRequested": false,
-                          "nameLocations": [],
                           "names": [],
                           "nodeType": "FunctionCall",
                           "src": "3119:10:1",
@@ -2994,7 +2941,6 @@
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
-                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "3104:47:1",
@@ -3025,7 +2971,7 @@
                           "referencedDeclaration": 408,
                           "src": "3162:9:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2115_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2235_storage_$",
                             "typeString": "mapping(address => struct Types.Customer storage ref)"
                           }
                         },
@@ -3049,7 +2995,7 @@
                         "nodeType": "IndexAccess",
                         "src": "3162:14:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Customer_$2115_storage",
+                          "typeIdentifier": "t_struct$_Customer_$2235_storage",
                           "typeString": "struct Types.Customer storage ref"
                         }
                       },
@@ -3058,10 +3004,9 @@
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
-                      "memberLocation": "3177:13:1",
                       "memberName": "kycVerifiedBy",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2110,
+                      "referencedDeclaration": 2230,
                       "src": "3162:28:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -3088,7 +3033,6 @@
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
-                      "memberLocation": "3197:6:1",
                       "memberName": "sender",
                       "nodeType": "MemberAccess",
                       "src": "3193:10:1",
@@ -3192,7 +3136,7 @@
                           "referencedDeclaration": 408,
                           "src": "3520:9:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2115_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2235_storage_$",
                             "typeString": "mapping(address => struct Types.Customer storage ref)"
                           }
                         },
@@ -3215,7 +3159,6 @@
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
-                          "memberLocation": "3534:6:1",
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
                           "src": "3530:10:1",
@@ -3231,7 +3174,7 @@
                         "nodeType": "IndexAccess",
                         "src": "3520:21:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Customer_$2115_storage",
+                          "typeIdentifier": "t_struct$_Customer_$2235_storage",
                           "typeString": "struct Types.Customer storage ref"
                         }
                       },
@@ -3240,10 +3183,9 @@
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
-                      "memberLocation": "3542:8:1",
                       "memberName": "dataHash",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2112,
+                      "referencedDeclaration": 2232,
                       "src": "3520:30:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
@@ -3291,7 +3233,7 @@
                           "referencedDeclaration": 408,
                           "src": "3569:9:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2115_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2235_storage_$",
                             "typeString": "mapping(address => struct Types.Customer storage ref)"
                           }
                         },
@@ -3314,7 +3256,6 @@
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
-                          "memberLocation": "3583:6:1",
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
                           "src": "3579:10:1",
@@ -3330,7 +3271,7 @@
                         "nodeType": "IndexAccess",
                         "src": "3569:21:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Customer_$2115_storage",
+                          "typeIdentifier": "t_struct$_Customer_$2235_storage",
                           "typeString": "struct Types.Customer storage ref"
                         }
                       },
@@ -3339,10 +3280,9 @@
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
-                      "memberLocation": "3591:13:1",
                       "memberName": "dataUpdatedOn",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2114,
+                      "referencedDeclaration": 2234,
                       "src": "3569:35:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -3394,7 +3334,6 @@
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
-                        "memberLocation": "3655:6:1",
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "src": "3651:10:1",
@@ -3413,7 +3352,7 @@
                             "referencedDeclaration": 408,
                             "src": "3663:9:1",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2115_storage_$",
+                              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2235_storage_$",
                               "typeString": "mapping(address => struct Types.Customer storage ref)"
                             }
                           },
@@ -3436,7 +3375,6 @@
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
-                            "memberLocation": "3677:6:1",
                             "memberName": "sender",
                             "nodeType": "MemberAccess",
                             "src": "3673:10:1",
@@ -3452,7 +3390,7 @@
                           "nodeType": "IndexAccess",
                           "src": "3663:21:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Customer_$2115_storage",
+                            "typeIdentifier": "t_struct$_Customer_$2235_storage",
                             "typeString": "struct Types.Customer storage ref"
                           }
                         },
@@ -3461,10 +3399,9 @@
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
-                        "memberLocation": "3685:4:1",
                         "memberName": "name",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2102,
+                        "referencedDeclaration": 2222,
                         "src": "3663:26:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_storage",
@@ -3516,7 +3453,6 @@
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
-                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "3635:62:1",
@@ -3678,7 +3614,7 @@
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Customer_$2115_memory_ptr",
+                        "typeIdentifier": "t_struct$_Customer_$2235_memory_ptr",
                         "typeString": "struct Types.Customer"
                       },
                       "typeName": {
@@ -3687,18 +3623,14 @@
                         "pathNode": {
                           "id": 686,
                           "name": "Types.Customer",
-                          "nameLocations": [
-                            "4305:5:1",
-                            "4311:8:1"
-                          ],
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 2115,
+                          "referencedDeclaration": 2235,
                           "src": "4305:14:1"
                         },
-                        "referencedDeclaration": 2115,
+                        "referencedDeclaration": 2235,
                         "src": "4305:14:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Customer_$2115_storage_ptr",
+                          "typeIdentifier": "t_struct$_Customer_$2235_storage_ptr",
                           "typeString": "struct Types.Customer"
                         }
                       },
@@ -3853,7 +3785,7 @@
                                   "referencedDeclaration": 688,
                                   "src": "4489:9:1",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_Customer_$2115_memory_ptr",
+                                    "typeIdentifier": "t_struct$_Customer_$2235_memory_ptr",
                                     "typeString": "struct Types.Customer memory"
                                   }
                                 },
@@ -3868,7 +3800,7 @@
                                     "referencedDeclaration": 408,
                                     "src": "4501:9:1",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2115_storage_$",
+                                      "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Customer_$2235_storage_$",
                                       "typeString": "mapping(address => struct Types.Customer storage ref)"
                                     }
                                   },
@@ -3892,13 +3824,13 @@
                                   "nodeType": "IndexAccess",
                                   "src": "4501:14:1",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_Customer_$2115_storage",
+                                    "typeIdentifier": "t_struct$_Customer_$2235_storage",
                                     "typeString": "struct Types.Customer storage ref"
                                   }
                                 },
                                 "src": "4489:26:1",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_Customer_$2115_memory_ptr",
+                                  "typeIdentifier": "t_struct$_Customer_$2235_memory_ptr",
                                   "typeString": "struct Types.Customer memory"
                                 }
                               },
@@ -3958,7 +3890,6 @@
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
-                      "memberLocation": "4384:6:1",
                       "memberName": "length",
                       "nodeType": "MemberAccess",
                       "src": "4373:17:1",
@@ -4085,7 +4016,7 @@
                         "referencedDeclaration": 688,
                         "src": "4592:9:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Customer_$2115_memory_ptr",
+                          "typeIdentifier": "t_struct$_Customer_$2235_memory_ptr",
                           "typeString": "struct Types.Customer memory"
                         }
                       }
@@ -4099,7 +4030,7 @@
                     "nodeType": "TupleExpression",
                     "src": "4583:19:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$_t_bool_$_t_struct$_Customer_$2115_memory_ptr_$",
+                      "typeIdentifier": "t_tuple$_t_bool_$_t_struct$_Customer_$2235_memory_ptr_$",
                       "typeString": "tuple(bool,struct Types.Customer memory)"
                     }
                   },
@@ -4238,7 +4169,7 @@
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Customer_$2115_memory_ptr",
+                    "typeIdentifier": "t_struct$_Customer_$2235_memory_ptr",
                     "typeString": "struct Types.Customer"
                   },
                   "typeName": {
@@ -4247,18 +4178,14 @@
                     "pathNode": {
                       "id": 677,
                       "name": "Types.Customer",
-                      "nameLocations": [
-                        "4244:5:1",
-                        "4250:8:1"
-                      ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 2115,
+                      "referencedDeclaration": 2235,
                       "src": "4244:14:1"
                     },
-                    "referencedDeclaration": 2115,
+                    "referencedDeclaration": 2235,
                     "src": "4244:14:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Customer_$2115_storage_ptr",
+                      "typeIdentifier": "t_struct$_Customer_$2235_storage_ptr",
                       "typeString": "struct Types.Customer"
                     }
                   },
@@ -4283,18 +4210,18 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.8.19+commit.7dd6d404.Emscripten.clang"
+    "version": "0.8.4+commit.c7e474f2.Emscripten.clang"
   },
   "networks": {
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xbf44aEB4c4c2C40F446E9868328444e3Dc590527",
-      "transactionHash": "0x7e5fad3498ccf49365889a0d1586528cd3b383045d1c4aeb3c49cf3eea3bc5c5"
+      "address": "0x6e984ba6f5fEcC63E48F9f7Cd7daec5500e93957",
+      "transactionHash": "0x78264a0bcbe18caae611e1a92df6438b288339f64a76fe7044f93d5e907a2dd3"
     }
   },
   "schemaVersion": "3.4.13",
-  "updatedAt": "2023-04-06T16:12:42.031Z",
+  "updatedAt": "2023-05-07T03:18:23.991Z",
   "networkType": "ethereum",
   "devdoc": {
     "author": "Suresh Konakanchi",

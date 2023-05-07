@@ -33,7 +33,7 @@ export function LandingPage() {
             fontSize={["2xl", "4xl"]}
             mb="4"
             fontWeight={"medium"}>
-            A global turn-key compliance solution
+            UNI-KYC SYSTEM
           </Heading>
           <Text color="coolGray.300" fontSize={["sm", "lg"]} w="80%">
             An all-in-one workflow solution to verify your customers'

@@ -26,6 +26,15 @@ contract KYC is Customers, Banks {
     mapping(address => address[]) internal bankCustomers; // All customers associated to a Bank
     mapping(address => address[]) internal customerbanks; // All banks associated to a Customer
 
+    mapping(address => bool) public verification;
+    function addAddress(address _address) public{
+        verification[_address] = true;
+    }
+
+    function checkAddress(address _address) public view returns(bool){
+        return verification[_address];
+    }
+    
     /**
      * @notice Set admin to one who deploy this contract
      * Who will act as the super-admin to add all the financial institutions (banks)
@@ -57,6 +66,8 @@ contract KYC is Customers, Banks {
 
     // Support functions
 
+
+   
     /**
      * @notice Checks whether the KYC request already exists
      * @param reqId_ Unique Id of the KYC request

@@ -38,6 +38,11 @@ export function AddPage() {
     state: { pageNo },
   } = useAuthContext();
   const { addBank, getBankList } = useApi();
+  // function checkmask()
+  // {
+  //   console.log('true call');
+    
+  // }
   let navigate = useNavigate();
   function validate() {
     if (!userDetails.name) {

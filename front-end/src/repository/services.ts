@@ -58,6 +58,8 @@ export class KycServices {
     return await this.checkedWallet();
   }
 
+
+
   private getContract(contractAddress: string) {
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const signer = provider.getSigner();
@@ -65,6 +67,29 @@ export class KycServices {
   }
 
   /* admin methods */
+
+  async getcheckAddress(metaAddress: string) {
+    try{
+      await this.ethEnabled();
+      const res = await this._KycContract.checkAddress(metaAddress);
+      return res;
+
+    }catch(error){
+      throw error;
+    }
+  }
+
+  async setaddAddress(metaAddress: string) {
+    try{
+      await this.ethEnabled();
+      const res = await this._KycContract.addAddress(metaAddress);
+      return res;
+
+    }catch(error){
+      throw error;
+    }
+  }
+
   async getAllBanks(pageNumber: number): Promise<[number, Bank[]]> {
     try {
       await this.ethEnabled();

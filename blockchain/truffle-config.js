@@ -41,10 +41,10 @@
  * https://trufflesuite.com/docs/truffle/getting-started/using-the-truffle-dashboard/
  */
 
-require('dotenv').config();
+require("dotenv").config();
 const { MNEMONIC, PROJECT_ID } = process.env;
 
-const HDWalletProvider = require('@truffle/hdwallet-provider');
+const HDWalletProvider = require("@truffle/hdwallet-provider");
 
 module.exports = {
   contracts_build_directory: "../front-end/src/contracts",
@@ -66,10 +66,11 @@ module.exports = {
     // options below to some value.
     //
     development: {
-     host: "127.0.0.1",     // Localhost (default: none)
-     port: 7545,            // Standard Ethereum port (default: none)
-     network_id: "5777",       // Any network (default: none)
+      host: "127.0.0.1", // Localhost (default: none)
+      port: 7545, // Standard Ethereum port (default: none)
+      network_id: "5777", // Any network (default: none)
     },
+
     //
     // An additional network, but with some advanced options…
     // advanced: {
@@ -83,16 +84,18 @@ module.exports = {
     //
     // Useful for deploying to a public network.
     // Note: It's important to wrap the provider as a function to ensure truffle uses a new provider every time.
-    // goerli: {
-    //   provider: () => 
-    //   new HDWalletProvider(
-    //     MNEMONIC,
-    //     `https://eth-goerli.g.alchemy.com/v2/${PROJECT_ID}`
+    // mumbai: {
+    //   provider: () =>
+    //     new HDWalletProvider(
+    //       MNEMONIC,
+    //       `https://rpc-mumbai.maticvigil.com/v1/${PROJECT_ID}`
     //     ),
-    //   network_id: 5,       // Goerli's id
-    //   confirmations: 2,    // # of confirmations to wait between deployments. (default: 0)
-    //   timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
-    //   skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
+    //   network_id: 80001,
+    //   gas: 850000,
+    //   gasPrice: 1000000000, // Optional, set the gas price for transactions
+    //   confirmations: 2, // Optional, number of confirmations to wait for before the transaction is considered mined
+    //   timeoutBlocks: 120000, // Optional, number of blocks to wait before a transaction times out
+    //   skipDryRun: true, // Skip dry run before migrations? (default: false for public nets )
     // },
     //
     // Useful for private networks
@@ -111,16 +114,17 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-      version: "0.8.19",      // Fetch exact version from solc-bin (default: truffle's version)
+      version: "0.8.4", // Fetch exact version from solc-bin (default: truffle's version)
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
-      settings: {          // See the solidity docs for advice about optimization and evmVersion
-       optimizer: {
-         enabled: true,
-         runs: 200
-       },
-      //  evmVersion: "byzantium"
-      }
-    }
+      settings: {
+        // See the solidity docs for advice about optimization and evmVersion
+        optimizer: {
+          enabled: true,
+          runs: 200,
+        },
+        //  evmVersion: "byzantium"
+      },
+    },
   },
 
   // Truffle DB is currently disabled by default; to enable it, change enabled:

@@ -31,26 +31,7 @@ export function Links() {
           Dashboard
         </Text>
       </NavLink>
-      <Link
-        mx="4"
-        my={["4", "0"]}
-        isExternal
-        href="https://blog.geekyants.com/"
-        isUnderlined={false}
-      >
-        <Text color="white" fontSize="lg">
-          Contact Us
-        </Text>
-      </Link>
-      <Link
-        isExternal
-        href="https://geekyants.com/#footer"
-        isUnderlined={false}
-      >
-        <Text color="white" mr={["0", "3"]} fontSize="lg">
-          Blog
-        </Text>
-      </Link>
+     
       {role === Role.Customer && (
         <Pressable onPress={() => navigate("/profile")}>
           <FiUpload size={25} color="white" style={{ marginRight: "20px" }} />

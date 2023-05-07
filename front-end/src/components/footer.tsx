@@ -11,7 +11,7 @@ export function Footer() {
       justifyContent="space-between">
       <HStack space={3} justifyContent={{ base: "center" }}>
         <Link
-          href="https://geekyants.com/"
+          href="#"
           isExternal
           textDecorationLine="none"
           _text={{
@@ -22,7 +22,7 @@ export function Footer() {
           Terms and conditions
         </Link>
         <Link
-          href="https://geekyants.com/"
+          href="#"
           isExternal
           _text={{
             color: "danger.500",
@@ -39,25 +39,25 @@ export function Footer() {
         paddingTop={{ base: "3" }}>
         <Link
           textDecorationLine="none"
-          href="https://www.facebook.com/geekyants"
+          href="#"
           isExternal>
           <BsFacebook color="white" size={25} className="logo-scale" />
         </Link>
         <Link
           textDecorationLine="none"
-          href="https://www.instagram.com/geekyantsofficial/"
+          href="#"
           isExternal>
           <BsInstagram color="white" size={25} className="logo-scale" />
         </Link>
         <Link
           textDecoration={"none"}
-          href="https://twitter.com/geekyants"
+          href="#"
           isExternal>
           <BsTwitter color="white" size={30} className="logo-scale" />
         </Link>
         <Link
           textDecoration={"none"}
-          href="https://www.youtube.com/geekyants"
+          href="#"
           isExternal>
           <BsYoutube
             color="white"

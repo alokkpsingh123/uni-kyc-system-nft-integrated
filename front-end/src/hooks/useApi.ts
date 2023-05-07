@@ -43,6 +43,33 @@ export function useApi() {
       }
     }
   }, []);
+
+  const getcheckAddress = useCallback(
+    async(addressMeta: string)=>{
+      try{
+        const data = await apiInstance.getcheckAddress(addressMeta);
+        return data;
+
+      }catch(error){
+        console.log(error);
+      }
+    },
+    []
+  );
+
+  const setaddAddress = useCallback(
+    async(addressMeta: string)=>{
+      try{
+        const data = await apiInstance.setaddAddress(addressMeta);
+        return data;
+
+      }catch(error){
+        console.log(error);
+      }
+    },
+    []
+  );
+
   const updateBankDetails = useCallback(
     async (updatedDetails: { id: string; email: string; name: string }) => {
       try {
@@ -103,6 +130,8 @@ export function useApi() {
       setListLoading(false);
     }
   }, []);
+
+  
 
   const getCustomerDetails = useCallback(async (id: string) => {
     try {
@@ -477,5 +506,7 @@ export function useApi() {
     handlePaginationInstitute,
     handlePaginationCustomer,
     listLoading,
+    getcheckAddress,
+    setaddAddress,
   };
 }

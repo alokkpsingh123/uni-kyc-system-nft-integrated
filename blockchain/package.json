@@ -1,0 +1,14 @@
+{
+  "name": "blockchain",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">\r   <img width=\"100%\"  src=\"https://github.com/GeekyAnts/sample-decentralised-kyc-ethereum/blob/main/assets/1.png?raw=true\">\r </p>",
+  "main": "truffle-config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.3"
+  }
+}

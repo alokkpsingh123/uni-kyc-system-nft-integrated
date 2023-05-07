@@ -96,16 +96,16 @@
       "type": "event"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"id_\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"}],\"name\":\"BankActivated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"id_\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"email\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"ifscCode\",\"type\":\"string\"}],\"name\":\"BankAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"id_\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"}],\"name\":\"BankDeactivated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"id_\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"email\",\"type\":\"string\"}],\"name\":\"BankUpdated\",\"type\":\"event\"}],\"devdoc\":{\"author\":\"Suresh Konakanchi\",\"details\":\"Library for managing all finanicial institutions thata were involved in the KYC process\",\"kind\":\"dev\",\"methods\":{},\"title\":\"Banks\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Banks.sol\":\"Banks\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Banks.sol\":{\"keccak256\":\"0xaa11dd6fcec5a58d63e9c00f7568e9ab80ec986b06cf14eaf597fffa1330a04d\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://74409064ec2ab011518f3ec181e7f543d66c9f385b29704de521490ccbb4e984\",\"dweb:/ipfs/QmSm3RXW4rU8yFWhQWc91UbZjP2oKnWB7aFGeozbtUCG2Z\"]},\"project:/contracts/Helpers.sol\":{\"keccak256\":\"0x7da8f842dd148dacae8b7a2e2f1231c4890ccd1fd4651d83d44f2e073fdfb7ee\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://8bb126eb7370f578d6c95db87ffc60397cd51f3ca47e273610be2c5e433dfd7f\",\"dweb:/ipfs/QmbKUAS18MNSnGcN8ZGofki3NXuuGZAjZgJfUA3V4VLdmp\"]},\"project:/contracts/Types.sol\":{\"keccak256\":\"0x405d007af31883db79618a5f2bb9b7af944a9a82de4fca3eea4d273f6155f06a\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://7fc88303b1ad8643bc0bd16fcd241a873410f57a226392c5027ecf83313b0df9\",\"dweb:/ipfs/QmT6pwj4pdZgVUsZUx8GPzVnd7VppvR3wd93xRB2QJr1j9\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220d06aac08457da8d9c7b1ece8756caafc6959b045e69ee18ad653688b3f74837f64736f6c63430008130033",
-  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220d06aac08457da8d9c7b1ece8756caafc6959b045e69ee18ad653688b3f74837f64736f6c63430008130033",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"id_\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"}],\"name\":\"BankActivated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"id_\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"email\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"ifscCode\",\"type\":\"string\"}],\"name\":\"BankAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"id_\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"}],\"name\":\"BankDeactivated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"id_\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"email\",\"type\":\"string\"}],\"name\":\"BankUpdated\",\"type\":\"event\"}],\"devdoc\":{\"author\":\"Suresh Konakanchi\",\"details\":\"Library for managing all finanicial institutions thata were involved in the KYC process\",\"kind\":\"dev\",\"methods\":{},\"title\":\"Banks\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Banks.sol\":\"Banks\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Banks.sol\":{\"keccak256\":\"0xaa11dd6fcec5a58d63e9c00f7568e9ab80ec986b06cf14eaf597fffa1330a04d\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://74409064ec2ab011518f3ec181e7f543d66c9f385b29704de521490ccbb4e984\",\"dweb:/ipfs/QmSm3RXW4rU8yFWhQWc91UbZjP2oKnWB7aFGeozbtUCG2Z\"]},\"project:/contracts/Helpers.sol\":{\"keccak256\":\"0x7da8f842dd148dacae8b7a2e2f1231c4890ccd1fd4651d83d44f2e073fdfb7ee\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://8bb126eb7370f578d6c95db87ffc60397cd51f3ca47e273610be2c5e433dfd7f\",\"dweb:/ipfs/QmbKUAS18MNSnGcN8ZGofki3NXuuGZAjZgJfUA3V4VLdmp\"]},\"project:/contracts/Types.sol\":{\"keccak256\":\"0x405d007af31883db79618a5f2bb9b7af944a9a82de4fca3eea4d273f6155f06a\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://7fc88303b1ad8643bc0bd16fcd241a873410f57a226392c5027ecf83313b0df9\",\"dweb:/ipfs/QmT6pwj4pdZgVUsZUx8GPzVnd7VppvR3wd93xRB2QJr1j9\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220d453a655cf78e80bdf8306bb3c04e714590899efde052527c358ad8e19c089e564736f6c63430008040033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220d453a655cf78e80bdf8306bb3c04e714590899efde052527c358ad8e19c089e564736f6c63430008040033",
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [],
   "sourceMap": "312:4541:0:-:0;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "312:4541:0:-:0;;;;;",
   "source": "// SPDX-License-Identifier: GPL-3.0\r\npragma experimental ABIEncoderV2;\r\npragma solidity >=0.4.25 <0.9.0;\r\n\r\nimport \"./Types.sol\";\r\nimport \"./Helpers.sol\";\r\n\r\n/**\r\n * @title Banks\r\n * @author Suresh Konakanchi\r\n * @dev Library for managing all finanicial institutions thata were involved in the KYC process\r\n */\r\ncontract Banks {\r\n    address[] internal bankList;\r\n    mapping(address => Types.Bank) internal banks;\r\n\r\n    // Events\r\n\r\n    event BankAdded(address id_, string name, string email, string ifscCode);\r\n    event BankUpdated(address id_, string name, string email);\r\n    event BankActivated(address id_, string name);\r\n    event BankDeactivated(address id_, string name);\r\n\r\n    // Modifiers\r\n\r\n    /**\r\n     * @notice Checks whether the requestor is bank & is active\r\n     * @param id_ Metamask address of the bank\r\n     */\r\n    modifier isValidBank(address id_) {\r\n        require(banks[id_].id_ != address(0), \"Bank not found\");\r\n        require(banks[id_].id_ == id_, \"Bank not found\");\r\n        require(\r\n            banks[id_].status == Types.BankStatus.Active,\r\n            \"Bank is not active\"\r\n        );\r\n        _;\r\n    }\r\n\r\n    // Contract Methods\r\n\r\n    /**\r\n     * @dev All the banks list. Data will be sent in pages to avoid the more gas fee\r\n     * @param pageNumber page number for which data is needed (1..2..3....n)\r\n     * @return totalPages Total pages available\r\n     * @return Bank[] List of banks in the current page\r\n     */\r\n    function getallbanks(uint256 pageNumber)\r\n        internal\r\n        view\r\n        returns (uint256 totalPages, Types.Bank[] memory)\r\n    {\r\n        require(pageNumber > 0, \"PN should be > 0\");\r\n        (\r\n            uint256 pages,\r\n            uint256 pageLength_,\r\n            uint256 startIndex_,\r\n            uint256 endIndex_\r\n        ) = Helpers.getIndexes(pageNumber, bankList);\r\n\r\n        Types.Bank[] memory banksList_ = new Types.Bank[](pageLength_);\r\n        for (uint256 i = startIndex_; i < endIndex_; i++)\r\n            banksList_[i] = banks[bankList[i]];\r\n        return (pages, banksList_);\r\n    }\r\n\r\n    /**\r\n     * @dev To get details of the single bank\r\n     * @param id_ metamask address of the requested bank\r\n     * @return Bank Details of the bank\r\n     */\r\n    function getsinglebank(address id_)\r\n        internal\r\n        view\r\n        returns (Types.Bank memory)\r\n    {\r\n        require(id_ != address(0), \"Bank Id Empty\");\r\n        return banks[id_];\r\n    }\r\n\r\n    /**\r\n     * @dev To add new bank account\r\n     * @param bank_ Bank details, which need to be added to the system\r\n     */\r\n    function addbank(Types.Bank memory bank_) internal {\r\n        require(banks[bank_.id_].id_ == address(0), \"Bank exists\");\r\n\r\n        banks[bank_.id_] = bank_;\r\n        bankList.push(bank_.id_);\r\n        emit BankAdded(bank_.id_, bank_.name, bank_.email, bank_.ifscCode);\r\n    }\r\n\r\n    /**\r\n     * @dev To add new bank account\r\n     * @param id_ Bank's metamask address\r\n     * @param email_ Bank's email address that need to be updated\r\n     * @param name_ Bank's name which need to be updated\r\n     */\r\n    function updatebank(\r\n        address id_,\r\n        string memory email_,\r\n        string memory name_\r\n    ) internal {\r\n        require(banks[id_].id_ != address(0), \"Bank not found\");\r\n\r\n        banks[id_].name = name_;\r\n        banks[id_].email = email_;\r\n        emit BankUpdated(id_, name_, email_);\r\n    }\r\n\r\n    /**\r\n     * @dev To add new bank account\r\n     * @param id_ Bank's metamask address\r\n     * @param makeActive_ If true, bank will be marked as active, else, it will be marked as deactivateds\r\n     * @return BankStatus current status of the bank to update in common list\r\n     */\r\n    function activatedeactivatebank(address id_, bool makeActive_)\r\n        internal\r\n        returns (Types.BankStatus)\r\n    {\r\n        require(banks[id_].id_ != address(0), \"Bank not found\");\r\n\r\n        if (makeActive_ && banks[id_].status == Types.BankStatus.Inactive) {\r\n            banks[id_].status = Types.BankStatus.Active;\r\n            emit BankActivated(id_, banks[id_].name);\r\n\r\n            // Updating in common list\r\n            return Types.BankStatus.Active;\r\n        } else if (\r\n            !makeActive_ && banks[id_].status == Types.BankStatus.Active\r\n        ) {\r\n            banks[id_].status = Types.BankStatus.Inactive;\r\n            emit BankDeactivated(id_, banks[id_].name);\r\n\r\n            // Updating in common list\r\n            return Types.BankStatus.Inactive;\r\n        } else {\r\n            // Already upto date\r\n            return banks[id_].status;\r\n        }\r\n    }\r\n\r\n    /**\r\n     * @dev To update the kyc count that bank did\r\n     * @param id_ Bank's metamask address\r\n     */\r\n    function updatekyccount(address id_) internal {\r\n        require(id_ != address(0), \"Bank not found\");\r\n        banks[id_].kycCount++;\r\n    }\r\n}\r\n",
-  "sourcePath": "C:\\Users\\alokk\\Desktop\\learning blockchain\\kyc2\\blockchain\\contracts\\Banks.sol",
+  "sourcePath": "C:\\Users\\alokk\\Desktop\\Learning\\learning blockchain\\kyc2\\blockchain\\contracts\\Banks.sol",
   "ast": {
     "absolutePath": "project:/contracts/Banks.sol",
     "exportedSymbols": {
@@ -116,7 +116,7 @@
         869
       ],
       "Types": [
-        2153
+        2273
       ]
     },
     "id": 395,
@@ -153,7 +153,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 395,
-        "sourceUnit": 2154,
+        "sourceUnit": 2274,
         "src": "108:21:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -173,7 +173,6 @@
       {
         "abstract": false,
         "baseContracts": [],
-        "canonicalName": "Banks",
         "contractDependencies": [],
         "contractKind": "contract",
         "documentation": {
@@ -240,13 +239,11 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2129_storage_$",
+              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2249_storage_$",
               "typeString": "mapping(address => struct Types.Bank)"
             },
             "typeName": {
               "id": 12,
-              "keyName": "",
-              "keyNameLocation": "-1:-1:-1",
               "keyType": {
                 "id": 9,
                 "name": "address",
@@ -260,29 +257,23 @@
               "nodeType": "Mapping",
               "src": "368:30:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2129_storage_$",
+                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2249_storage_$",
                 "typeString": "mapping(address => struct Types.Bank)"
               },
-              "valueName": "",
-              "valueNameLocation": "-1:-1:-1",
               "valueType": {
                 "id": 11,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
                   "id": 10,
                   "name": "Types.Bank",
-                  "nameLocations": [
-                    "387:5:0",
-                    "393:4:0"
-                  ],
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 2129,
+                  "referencedDeclaration": 2249,
                   "src": "387:10:0"
                 },
-                "referencedDeclaration": 2129,
+                "referencedDeclaration": 2249,
                 "src": "387:10:0",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_Bank_$2129_storage_ptr",
+                  "typeIdentifier": "t_struct$_Bank_$2249_storage_ptr",
                   "typeString": "struct Types.Bank"
                 }
               }
@@ -291,7 +282,6 @@
           },
           {
             "anonymous": false,
-            "eventSelector": "17ee33cc6a54067d735ee1c9200fc0dc8354b1d7deae9908692bcd90723044b1",
             "id": 23,
             "name": "BankAdded",
             "nameLocation": "445:9:0",
@@ -420,7 +410,6 @@
           },
           {
             "anonymous": false,
-            "eventSelector": "c0e694475d9755514453a459373ded91f1517029faca54000da1c3007ec2c4f9",
             "id": 31,
             "name": "BankUpdated",
             "nameLocation": "524:11:0",
@@ -521,7 +510,6 @@
           },
           {
             "anonymous": false,
-            "eventSelector": "bbb85d77e85c02977b28ba58175443b7d9c020551c53482ea6df5fe2e1cb8843",
             "id": 37,
             "name": "BankActivated",
             "nameLocation": "588:13:0",
@@ -594,7 +582,6 @@
           },
           {
             "anonymous": false,
-            "eventSelector": "e2914c072e85a93716aea3154e8dc2a6d4f9a823930697852b892fe10bd598f8",
             "id": 43,
             "name": "BankDeactivated",
             "nameLocation": "640:15:0",
@@ -694,7 +681,7 @@
                               "referencedDeclaration": 13,
                               "src": "894:5:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2129_storage_$",
+                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2249_storage_$",
                                 "typeString": "mapping(address => struct Types.Bank storage ref)"
                               }
                             },
@@ -718,7 +705,7 @@
                             "nodeType": "IndexAccess",
                             "src": "894:10:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Bank_$2129_storage",
+                              "typeIdentifier": "t_struct$_Bank_$2249_storage",
                               "typeString": "struct Types.Bank storage ref"
                             }
                           },
@@ -727,10 +714,9 @@
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
-                          "memberLocation": "905:3:0",
                           "memberName": "id_",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 2121,
+                          "referencedDeclaration": 2241,
                           "src": "894:14:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -790,7 +776,6 @@
                           "isPure": true,
                           "kind": "typeConversion",
                           "lValueRequested": false,
-                          "nameLocations": [],
                           "names": [],
                           "nodeType": "FunctionCall",
                           "src": "912:10:0",
@@ -854,7 +839,6 @@
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
-                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "886:55:0",
@@ -891,7 +875,7 @@
                               "referencedDeclaration": 13,
                               "src": "960:5:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2129_storage_$",
+                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2249_storage_$",
                                 "typeString": "mapping(address => struct Types.Bank storage ref)"
                               }
                             },
@@ -915,7 +899,7 @@
                             "nodeType": "IndexAccess",
                             "src": "960:10:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Bank_$2129_storage",
+                              "typeIdentifier": "t_struct$_Bank_$2249_storage",
                               "typeString": "struct Types.Bank storage ref"
                             }
                           },
@@ -924,10 +908,9 @@
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
-                          "memberLocation": "971:3:0",
                           "memberName": "id_",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 2121,
+                          "referencedDeclaration": 2241,
                           "src": "960:14:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -1002,7 +985,6 @@
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
-                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "952:48:0",
@@ -1021,7 +1003,7 @@
                     "arguments": [
                       {
                         "commonType": {
-                          "typeIdentifier": "t_enum$_BankStatus_$2079",
+                          "typeIdentifier": "t_enum$_BankStatus_$2199",
                           "typeString": "enum Types.BankStatus"
                         },
                         "id": 79,
@@ -1039,7 +1021,7 @@
                               "referencedDeclaration": 13,
                               "src": "1033:5:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2129_storage_$",
+                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2249_storage_$",
                                 "typeString": "mapping(address => struct Types.Bank storage ref)"
                               }
                             },
@@ -1063,7 +1045,7 @@
                             "nodeType": "IndexAccess",
                             "src": "1033:10:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Bank_$2129_storage",
+                              "typeIdentifier": "t_struct$_Bank_$2249_storage",
                               "typeString": "struct Types.Bank storage ref"
                             }
                           },
@@ -1072,13 +1054,12 @@
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
-                          "memberLocation": "1044:6:0",
                           "memberName": "status",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 2128,
+                          "referencedDeclaration": 2248,
                           "src": "1033:17:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_enum$_BankStatus_$2079",
+                            "typeIdentifier": "t_enum$_BankStatus_$2199",
                             "typeString": "enum Types.BankStatus"
                           }
                         },
@@ -1091,10 +1072,10 @@
                               "name": "Types",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 2153,
+                              "referencedDeclaration": 2273,
                               "src": "1054:5:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_Types_$2153_$",
+                                "typeIdentifier": "t_type$_t_contract$_Types_$2273_$",
                                 "typeString": "type(library Types)"
                               }
                             },
@@ -1103,13 +1084,12 @@
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
-                            "memberLocation": "1060:10:0",
                             "memberName": "BankStatus",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 2079,
+                            "referencedDeclaration": 2199,
                             "src": "1054:16:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_enum$_BankStatus_$2079_$",
+                              "typeIdentifier": "t_type$_t_enum$_BankStatus_$2199_$",
                               "typeString": "type(enum Types.BankStatus)"
                             }
                           },
@@ -1118,13 +1098,12 @@
                           "isLValue": false,
                           "isPure": true,
                           "lValueRequested": false,
-                          "memberLocation": "1071:6:0",
                           "memberName": "Active",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 2077,
+                          "referencedDeclaration": 2197,
                           "src": "1054:23:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_enum$_BankStatus_$2079",
+                            "typeIdentifier": "t_enum$_BankStatus_$2199",
                             "typeString": "enum Types.BankStatus"
                           }
                         },
@@ -1182,7 +1161,6 @@
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
-                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "1011:112:0",
@@ -1355,7 +1333,6 @@
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
-                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "1614:43:0",
@@ -1542,7 +1519,6 @@
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
-                      "memberLocation": "1818:10:0",
                       "memberName": "getIndexes",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 820,
@@ -1558,7 +1534,6 @@
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
-                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "1810:40:0",
@@ -1588,7 +1563,7 @@
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_Bank_$2129_memory_ptr_$dyn_memory_ptr",
+                        "typeIdentifier": "t_array$_t_struct$_Bank_$2249_memory_ptr_$dyn_memory_ptr",
                         "typeString": "struct Types.Bank[]"
                       },
                       "typeName": {
@@ -1598,18 +1573,14 @@
                           "pathNode": {
                             "id": 120,
                             "name": "Types.Bank",
-                            "nameLocations": [
-                              "1863:5:0",
-                              "1869:4:0"
-                            ],
                             "nodeType": "IdentifierPath",
-                            "referencedDeclaration": 2129,
+                            "referencedDeclaration": 2249,
                             "src": "1863:10:0"
                           },
-                          "referencedDeclaration": 2129,
+                          "referencedDeclaration": 2249,
                           "src": "1863:10:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Bank_$2129_storage_ptr",
+                            "typeIdentifier": "t_struct$_Bank_$2249_storage_ptr",
                             "typeString": "struct Types.Bank"
                           }
                         },
@@ -1617,7 +1588,7 @@
                         "nodeType": "ArrayTypeName",
                         "src": "1863:12:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_Bank_$2129_storage_$dyn_storage_ptr",
+                          "typeIdentifier": "t_array$_t_struct$_Bank_$2249_storage_$dyn_storage_ptr",
                           "typeString": "struct Types.Bank[]"
                         }
                       },
@@ -1655,7 +1626,7 @@
                       "nodeType": "NewExpression",
                       "src": "1896:16:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_objectcreation_pure$_t_uint256_$returns$_t_array$_t_struct$_Bank_$2129_memory_ptr_$dyn_memory_ptr_$",
+                        "typeIdentifier": "t_function_objectcreation_pure$_t_uint256_$returns$_t_array$_t_struct$_Bank_$2249_memory_ptr_$dyn_memory_ptr_$",
                         "typeString": "function (uint256) pure returns (struct Types.Bank memory[] memory)"
                       },
                       "typeName": {
@@ -1665,18 +1636,14 @@
                           "pathNode": {
                             "id": 124,
                             "name": "Types.Bank",
-                            "nameLocations": [
-                              "1900:5:0",
-                              "1906:4:0"
-                            ],
                             "nodeType": "IdentifierPath",
-                            "referencedDeclaration": 2129,
+                            "referencedDeclaration": 2249,
                             "src": "1900:10:0"
                           },
-                          "referencedDeclaration": 2129,
+                          "referencedDeclaration": 2249,
                           "src": "1900:10:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Bank_$2129_storage_ptr",
+                            "typeIdentifier": "t_struct$_Bank_$2249_storage_ptr",
                             "typeString": "struct Types.Bank"
                           }
                         },
@@ -1684,7 +1651,7 @@
                         "nodeType": "ArrayTypeName",
                         "src": "1900:12:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_Bank_$2129_storage_$dyn_storage_ptr",
+                          "typeIdentifier": "t_array$_t_struct$_Bank_$2249_storage_$dyn_storage_ptr",
                           "typeString": "struct Types.Bank[]"
                         }
                       }
@@ -1695,13 +1662,12 @@
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
-                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "1896:29:0",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_Bank_$2129_memory_ptr_$dyn_memory_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_Bank_$2249_memory_ptr_$dyn_memory_ptr",
                       "typeString": "struct Types.Bank memory[] memory"
                     }
                   },
@@ -1725,7 +1691,7 @@
                           "referencedDeclaration": 123,
                           "src": "1999:10:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_array$_t_struct$_Bank_$2129_memory_ptr_$dyn_memory_ptr",
+                            "typeIdentifier": "t_array$_t_struct$_Bank_$2249_memory_ptr_$dyn_memory_ptr",
                             "typeString": "struct Types.Bank memory[] memory"
                           }
                         },
@@ -1749,7 +1715,7 @@
                         "nodeType": "IndexAccess",
                         "src": "1999:13:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Bank_$2129_memory_ptr",
+                          "typeIdentifier": "t_struct$_Bank_$2249_memory_ptr",
                           "typeString": "struct Types.Bank memory"
                         }
                       },
@@ -1764,7 +1730,7 @@
                           "referencedDeclaration": 13,
                           "src": "2015:5:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2129_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2249_storage_$",
                             "typeString": "mapping(address => struct Types.Bank storage ref)"
                           }
                         },
@@ -1813,13 +1779,13 @@
                         "nodeType": "IndexAccess",
                         "src": "2015:18:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Bank_$2129_storage",
+                          "typeIdentifier": "t_struct$_Bank_$2249_storage",
                           "typeString": "struct Types.Bank storage ref"
                         }
                       },
                       "src": "1999:34:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Bank_$2129_memory_ptr",
+                        "typeIdentifier": "t_struct$_Bank_$2249_memory_ptr",
                         "typeString": "struct Types.Bank memory"
                       }
                     },
@@ -1977,7 +1943,7 @@
                         "referencedDeclaration": 123,
                         "src": "2059:10:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_Bank_$2129_memory_ptr_$dyn_memory_ptr",
+                          "typeIdentifier": "t_array$_t_struct$_Bank_$2249_memory_ptr_$dyn_memory_ptr",
                           "typeString": "struct Types.Bank memory[] memory"
                         }
                       }
@@ -1991,7 +1957,7 @@
                     "nodeType": "TupleExpression",
                     "src": "2051:19:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$_t_uint256_$_t_array$_t_struct$_Bank_$2129_memory_ptr_$dyn_memory_ptr_$",
+                      "typeIdentifier": "t_tuple$_t_uint256_$_t_array$_t_struct$_Bank_$2249_memory_ptr_$dyn_memory_ptr_$",
                       "typeString": "tuple(uint256,struct Types.Bank memory[] memory)"
                     }
                   },
@@ -2092,7 +2058,7 @@
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_Bank_$2129_memory_ptr_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_Bank_$2249_memory_ptr_$dyn_memory_ptr",
                     "typeString": "struct Types.Bank[]"
                   },
                   "typeName": {
@@ -2102,18 +2068,14 @@
                       "pathNode": {
                         "id": 92,
                         "name": "Types.Bank",
-                        "nameLocations": [
-                          "1577:5:0",
-                          "1583:4:0"
-                        ],
                         "nodeType": "IdentifierPath",
-                        "referencedDeclaration": 2129,
+                        "referencedDeclaration": 2249,
                         "src": "1577:10:0"
                       },
-                      "referencedDeclaration": 2129,
+                      "referencedDeclaration": 2249,
                       "src": "1577:10:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Bank_$2129_storage_ptr",
+                        "typeIdentifier": "t_struct$_Bank_$2249_storage_ptr",
                         "typeString": "struct Types.Bank"
                       }
                     },
@@ -2121,7 +2083,7 @@
                     "nodeType": "ArrayTypeName",
                     "src": "1577:12:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_Bank_$2129_storage_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_Bank_$2249_storage_$dyn_storage_ptr",
                       "typeString": "struct Types.Bank[]"
                     }
                   },
@@ -2220,7 +2182,6 @@
                           "isPure": true,
                           "kind": "typeConversion",
                           "lValueRequested": false,
-                          "nameLocations": [],
                           "names": [],
                           "nodeType": "FunctionCall",
                           "src": "2386:10:0",
@@ -2284,7 +2245,6 @@
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
-                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "2371:43:0",
@@ -2308,7 +2268,7 @@
                       "referencedDeclaration": 13,
                       "src": "2432:5:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2129_storage_$",
+                        "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2249_storage_$",
                         "typeString": "mapping(address => struct Types.Bank storage ref)"
                       }
                     },
@@ -2332,7 +2292,7 @@
                     "nodeType": "IndexAccess",
                     "src": "2432:10:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Bank_$2129_storage",
+                      "typeIdentifier": "t_struct$_Bank_$2249_storage",
                       "typeString": "struct Types.Bank storage ref"
                     }
                   },
@@ -2407,7 +2367,7 @@
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Bank_$2129_memory_ptr",
+                    "typeIdentifier": "t_struct$_Bank_$2249_memory_ptr",
                     "typeString": "struct Types.Bank"
                   },
                   "typeName": {
@@ -2416,18 +2376,14 @@
                     "pathNode": {
                       "id": 162,
                       "name": "Types.Bank",
-                      "nameLocations": [
-                        "2336:5:0",
-                        "2342:4:0"
-                      ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 2129,
+                      "referencedDeclaration": 2249,
                       "src": "2336:10:0"
                     },
-                    "referencedDeclaration": 2129,
+                    "referencedDeclaration": 2249,
                     "src": "2336:10:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Bank_$2129_storage_ptr",
+                      "typeIdentifier": "t_struct$_Bank_$2249_storage_ptr",
                       "typeString": "struct Types.Bank"
                     }
                   },
@@ -2471,7 +2427,7 @@
                               "referencedDeclaration": 13,
                               "src": "2655:5:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2129_storage_$",
+                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2249_storage_$",
                                 "typeString": "mapping(address => struct Types.Bank storage ref)"
                               }
                             },
@@ -2485,7 +2441,7 @@
                                 "referencedDeclaration": 185,
                                 "src": "2661:5:0",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_Bank_$2129_memory_ptr",
+                                  "typeIdentifier": "t_struct$_Bank_$2249_memory_ptr",
                                   "typeString": "struct Types.Bank memory"
                                 }
                               },
@@ -2494,10 +2450,9 @@
                               "isLValue": true,
                               "isPure": false,
                               "lValueRequested": false,
-                              "memberLocation": "2667:3:0",
                               "memberName": "id_",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 2121,
+                              "referencedDeclaration": 2241,
                               "src": "2661:9:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_address",
@@ -2511,7 +2466,7 @@
                             "nodeType": "IndexAccess",
                             "src": "2655:16:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Bank_$2129_storage",
+                              "typeIdentifier": "t_struct$_Bank_$2249_storage",
                               "typeString": "struct Types.Bank storage ref"
                             }
                           },
@@ -2520,10 +2475,9 @@
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
-                          "memberLocation": "2672:3:0",
                           "memberName": "id_",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 2121,
+                          "referencedDeclaration": 2241,
                           "src": "2655:20:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -2583,7 +2537,6 @@
                           "isPure": true,
                           "kind": "typeConversion",
                           "lValueRequested": false,
-                          "nameLocations": [],
                           "names": [],
                           "nodeType": "FunctionCall",
                           "src": "2679:10:0",
@@ -2647,7 +2600,6 @@
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
-                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "2647:58:0",
@@ -2677,7 +2629,7 @@
                         "referencedDeclaration": 13,
                         "src": "2718:5:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2129_storage_$",
+                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2249_storage_$",
                           "typeString": "mapping(address => struct Types.Bank storage ref)"
                         }
                       },
@@ -2691,7 +2643,7 @@
                           "referencedDeclaration": 185,
                           "src": "2724:5:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Bank_$2129_memory_ptr",
+                            "typeIdentifier": "t_struct$_Bank_$2249_memory_ptr",
                             "typeString": "struct Types.Bank memory"
                           }
                         },
@@ -2700,10 +2652,9 @@
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
-                        "memberLocation": "2730:3:0",
                         "memberName": "id_",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2121,
+                        "referencedDeclaration": 2241,
                         "src": "2724:9:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -2717,7 +2668,7 @@
                       "nodeType": "IndexAccess",
                       "src": "2718:16:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Bank_$2129_storage",
+                        "typeIdentifier": "t_struct$_Bank_$2249_storage",
                         "typeString": "struct Types.Bank storage ref"
                       }
                     },
@@ -2731,13 +2682,13 @@
                       "referencedDeclaration": 185,
                       "src": "2737:5:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Bank_$2129_memory_ptr",
+                        "typeIdentifier": "t_struct$_Bank_$2249_memory_ptr",
                         "typeString": "struct Types.Bank memory"
                       }
                     },
                     "src": "2718:24:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Bank_$2129_storage",
+                      "typeIdentifier": "t_struct$_Bank_$2249_storage",
                       "typeString": "struct Types.Bank storage ref"
                     }
                   },
@@ -2757,7 +2708,7 @@
                           "referencedDeclaration": 185,
                           "src": "2767:5:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Bank_$2129_memory_ptr",
+                            "typeIdentifier": "t_struct$_Bank_$2249_memory_ptr",
                             "typeString": "struct Types.Bank memory"
                           }
                         },
@@ -2766,10 +2717,9 @@
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
-                        "memberLocation": "2773:3:0",
                         "memberName": "id_",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2121,
+                        "referencedDeclaration": 2241,
                         "src": "2767:9:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -2801,12 +2751,11 @@
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
-                      "memberLocation": "2762:4:0",
                       "memberName": "push",
                       "nodeType": "MemberAccess",
                       "src": "2753:13:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_address_$dyn_storage_ptr_$_t_address_$returns$__$attached_to$_t_array$_t_address_$dyn_storage_ptr_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_address_$dyn_storage_ptr_$_t_address_$returns$__$bound_to$_t_array$_t_address_$dyn_storage_ptr_$",
                         "typeString": "function (address[] storage pointer,address)"
                       }
                     },
@@ -2816,7 +2765,6 @@
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
-                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "2753:24:0",
@@ -2842,7 +2790,7 @@
                           "referencedDeclaration": 185,
                           "src": "2803:5:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Bank_$2129_memory_ptr",
+                            "typeIdentifier": "t_struct$_Bank_$2249_memory_ptr",
                             "typeString": "struct Types.Bank memory"
                           }
                         },
@@ -2851,10 +2799,9 @@
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
-                        "memberLocation": "2809:3:0",
                         "memberName": "id_",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2121,
+                        "referencedDeclaration": 2241,
                         "src": "2803:9:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -2870,7 +2817,7 @@
                           "referencedDeclaration": 185,
                           "src": "2814:5:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Bank_$2129_memory_ptr",
+                            "typeIdentifier": "t_struct$_Bank_$2249_memory_ptr",
                             "typeString": "struct Types.Bank memory"
                           }
                         },
@@ -2879,10 +2826,9 @@
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
-                        "memberLocation": "2820:4:0",
                         "memberName": "name",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2117,
+                        "referencedDeclaration": 2237,
                         "src": "2814:10:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -2898,7 +2844,7 @@
                           "referencedDeclaration": 185,
                           "src": "2826:5:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Bank_$2129_memory_ptr",
+                            "typeIdentifier": "t_struct$_Bank_$2249_memory_ptr",
                             "typeString": "struct Types.Bank memory"
                           }
                         },
@@ -2907,10 +2853,9 @@
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
-                        "memberLocation": "2832:5:0",
                         "memberName": "email",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2119,
+                        "referencedDeclaration": 2239,
                         "src": "2826:11:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -2926,7 +2871,7 @@
                           "referencedDeclaration": 185,
                           "src": "2839:5:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Bank_$2129_memory_ptr",
+                            "typeIdentifier": "t_struct$_Bank_$2249_memory_ptr",
                             "typeString": "struct Types.Bank memory"
                           }
                         },
@@ -2935,10 +2880,9 @@
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
-                        "memberLocation": "2845:8:0",
                         "memberName": "ifscCode",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2123,
+                        "referencedDeclaration": 2243,
                         "src": "2839:14:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -2982,7 +2926,6 @@
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
-                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "2793:61:0",
@@ -3027,7 +2970,7 @@
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Bank_$2129_memory_ptr",
+                    "typeIdentifier": "t_struct$_Bank_$2249_memory_ptr",
                     "typeString": "struct Types.Bank"
                   },
                   "typeName": {
@@ -3036,18 +2979,14 @@
                     "pathNode": {
                       "id": 183,
                       "name": "Types.Bank",
-                      "nameLocations": [
-                        "2602:5:0",
-                        "2608:4:0"
-                      ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 2129,
+                      "referencedDeclaration": 2249,
                       "src": "2602:10:0"
                     },
-                    "referencedDeclaration": 2129,
+                    "referencedDeclaration": 2249,
                     "src": "2602:10:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Bank_$2129_storage_ptr",
+                      "typeIdentifier": "t_struct$_Bank_$2249_storage_ptr",
                       "typeString": "struct Types.Bank"
                     }
                   },
@@ -3097,7 +3036,7 @@
                               "referencedDeclaration": 13,
                               "src": "3231:5:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2129_storage_$",
+                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2249_storage_$",
                                 "typeString": "mapping(address => struct Types.Bank storage ref)"
                               }
                             },
@@ -3121,7 +3060,7 @@
                             "nodeType": "IndexAccess",
                             "src": "3231:10:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Bank_$2129_storage",
+                              "typeIdentifier": "t_struct$_Bank_$2249_storage",
                               "typeString": "struct Types.Bank storage ref"
                             }
                           },
@@ -3130,10 +3069,9 @@
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
-                          "memberLocation": "3242:3:0",
                           "memberName": "id_",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 2121,
+                          "referencedDeclaration": 2241,
                           "src": "3231:14:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -3193,7 +3131,6 @@
                           "isPure": true,
                           "kind": "typeConversion",
                           "lValueRequested": false,
-                          "nameLocations": [],
                           "names": [],
                           "nodeType": "FunctionCall",
                           "src": "3249:10:0",
@@ -3257,7 +3194,6 @@
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
-                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "3223:55:0",
@@ -3288,7 +3224,7 @@
                           "referencedDeclaration": 13,
                           "src": "3291:5:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2129_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2249_storage_$",
                             "typeString": "mapping(address => struct Types.Bank storage ref)"
                           }
                         },
@@ -3312,7 +3248,7 @@
                         "nodeType": "IndexAccess",
                         "src": "3291:10:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Bank_$2129_storage",
+                          "typeIdentifier": "t_struct$_Bank_$2249_storage",
                           "typeString": "struct Types.Bank storage ref"
                         }
                       },
@@ -3321,10 +3257,9 @@
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
-                      "memberLocation": "3302:4:0",
                       "memberName": "name",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2117,
+                      "referencedDeclaration": 2237,
                       "src": "3291:15:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
@@ -3372,7 +3307,7 @@
                           "referencedDeclaration": 13,
                           "src": "3325:5:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2129_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2249_storage_$",
                             "typeString": "mapping(address => struct Types.Bank storage ref)"
                           }
                         },
@@ -3396,7 +3331,7 @@
                         "nodeType": "IndexAccess",
                         "src": "3325:10:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Bank_$2129_storage",
+                          "typeIdentifier": "t_struct$_Bank_$2249_storage",
                           "typeString": "struct Types.Bank storage ref"
                         }
                       },
@@ -3405,10 +3340,9 @@
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
-                      "memberLocation": "3336:5:0",
                       "memberName": "email",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2119,
+                      "referencedDeclaration": 2239,
                       "src": "3325:16:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
@@ -3511,7 +3445,6 @@
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
-                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "3366:31:0",
@@ -3670,7 +3603,7 @@
                               "referencedDeclaration": 13,
                               "src": "3838:5:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2129_storage_$",
+                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2249_storage_$",
                                 "typeString": "mapping(address => struct Types.Bank storage ref)"
                               }
                             },
@@ -3694,7 +3627,7 @@
                             "nodeType": "IndexAccess",
                             "src": "3838:10:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Bank_$2129_storage",
+                              "typeIdentifier": "t_struct$_Bank_$2249_storage",
                               "typeString": "struct Types.Bank storage ref"
                             }
                           },
@@ -3703,10 +3636,9 @@
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
-                          "memberLocation": "3849:3:0",
                           "memberName": "id_",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 2121,
+                          "referencedDeclaration": 2241,
                           "src": "3838:14:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -3766,7 +3698,6 @@
                           "isPure": true,
                           "kind": "typeConversion",
                           "lValueRequested": false,
-                          "nameLocations": [],
                           "names": [],
                           "nodeType": "FunctionCall",
                           "src": "3856:10:0",
@@ -3830,7 +3761,6 @@
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
-                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "3830:55:0",
@@ -3871,7 +3801,7 @@
                     "operator": "&&",
                     "rightExpression": {
                       "commonType": {
-                        "typeIdentifier": "t_enum$_BankStatus_$2079",
+                        "typeIdentifier": "t_enum$_BankStatus_$2199",
                         "typeString": "enum Types.BankStatus"
                       },
                       "id": 304,
@@ -3889,7 +3819,7 @@
                             "referencedDeclaration": 13,
                             "src": "3917:5:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2129_storage_$",
+                              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2249_storage_$",
                               "typeString": "mapping(address => struct Types.Bank storage ref)"
                             }
                           },
@@ -3913,7 +3843,7 @@
                           "nodeType": "IndexAccess",
                           "src": "3917:10:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Bank_$2129_storage",
+                            "typeIdentifier": "t_struct$_Bank_$2249_storage",
                             "typeString": "struct Types.Bank storage ref"
                           }
                         },
@@ -3922,13 +3852,12 @@
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
-                        "memberLocation": "3928:6:0",
                         "memberName": "status",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2128,
+                        "referencedDeclaration": 2248,
                         "src": "3917:17:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_enum$_BankStatus_$2079",
+                          "typeIdentifier": "t_enum$_BankStatus_$2199",
                           "typeString": "enum Types.BankStatus"
                         }
                       },
@@ -3941,10 +3870,10 @@
                             "name": "Types",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2153,
+                            "referencedDeclaration": 2273,
                             "src": "3938:5:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_Types_$2153_$",
+                              "typeIdentifier": "t_type$_t_contract$_Types_$2273_$",
                               "typeString": "type(library Types)"
                             }
                           },
@@ -3953,13 +3882,12 @@
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
-                          "memberLocation": "3944:10:0",
                           "memberName": "BankStatus",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 2079,
+                          "referencedDeclaration": 2199,
                           "src": "3938:16:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_type$_t_enum$_BankStatus_$2079_$",
+                            "typeIdentifier": "t_type$_t_enum$_BankStatus_$2199_$",
                             "typeString": "type(enum Types.BankStatus)"
                           }
                         },
@@ -3968,13 +3896,12 @@
                         "isLValue": false,
                         "isPure": true,
                         "lValueRequested": false,
-                        "memberLocation": "3955:8:0",
                         "memberName": "Inactive",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 2078,
+                        "referencedDeclaration": 2198,
                         "src": "3938:25:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_enum$_BankStatus_$2079",
+                          "typeIdentifier": "t_enum$_BankStatus_$2199",
                           "typeString": "enum Types.BankStatus"
                         }
                       },
@@ -4032,7 +3959,7 @@
                       "operator": "&&",
                       "rightExpression": {
                         "commonType": {
-                          "typeIdentifier": "t_enum$_BankStatus_$2079",
+                          "typeIdentifier": "t_enum$_BankStatus_$2199",
                           "typeString": "enum Types.BankStatus"
                         },
                         "id": 337,
@@ -4050,7 +3977,7 @@
                               "referencedDeclaration": 13,
                               "src": "4217:5:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2129_storage_$",
+                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2249_storage_$",
                                 "typeString": "mapping(address => struct Types.Bank storage ref)"
                               }
                             },
@@ -4074,7 +4001,7 @@
                             "nodeType": "IndexAccess",
                             "src": "4217:10:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Bank_$2129_storage",
+                              "typeIdentifier": "t_struct$_Bank_$2249_storage",
                               "typeString": "struct Types.Bank storage ref"
                             }
                           },
@@ -4083,13 +4010,12 @@
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
-                          "memberLocation": "4228:6:0",
                           "memberName": "status",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 2128,
+                          "referencedDeclaration": 2248,
                           "src": "4217:17:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_enum$_BankStatus_$2079",
+                            "typeIdentifier": "t_enum$_BankStatus_$2199",
                             "typeString": "enum Types.BankStatus"
                           }
                         },
@@ -4102,10 +4028,10 @@
                               "name": "Types",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 2153,
+                              "referencedDeclaration": 2273,
                               "src": "4238:5:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_Types_$2153_$",
+                                "typeIdentifier": "t_type$_t_contract$_Types_$2273_$",
                                 "typeString": "type(library Types)"
                               }
                             },
@@ -4114,13 +4040,12 @@
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
-                            "memberLocation": "4244:10:0",
                             "memberName": "BankStatus",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 2079,
+                            "referencedDeclaration": 2199,
                             "src": "4238:16:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_enum$_BankStatus_$2079_$",
+                              "typeIdentifier": "t_type$_t_enum$_BankStatus_$2199_$",
                               "typeString": "type(enum Types.BankStatus)"
                             }
                           },
@@ -4129,13 +4054,12 @@
                           "isLValue": false,
                           "isPure": true,
                           "lValueRequested": false,
-                          "memberLocation": "4255:6:0",
                           "memberName": "Active",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 2077,
+                          "referencedDeclaration": 2197,
                           "src": "4238:23:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_enum$_BankStatus_$2079",
+                            "typeIdentifier": "t_enum$_BankStatus_$2199",
                             "typeString": "enum Types.BankStatus"
                           }
                         },
@@ -4167,7 +4091,7 @@
                                 "referencedDeclaration": 13,
                                 "src": "4553:5:0",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2129_storage_$",
+                                  "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2249_storage_$",
                                   "typeString": "mapping(address => struct Types.Bank storage ref)"
                                 }
                               },
@@ -4191,7 +4115,7 @@
                               "nodeType": "IndexAccess",
                               "src": "4553:10:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Bank_$2129_storage",
+                                "typeIdentifier": "t_struct$_Bank_$2249_storage",
                                 "typeString": "struct Types.Bank storage ref"
                               }
                             },
@@ -4200,13 +4124,12 @@
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
-                            "memberLocation": "4564:6:0",
                             "memberName": "status",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 2128,
+                            "referencedDeclaration": 2248,
                             "src": "4553:17:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_enum$_BankStatus_$2079",
+                              "typeIdentifier": "t_enum$_BankStatus_$2199",
                               "typeString": "enum Types.BankStatus"
                             }
                           },
@@ -4242,7 +4165,7 @@
                                   "referencedDeclaration": 13,
                                   "src": "4288:5:0",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2129_storage_$",
+                                    "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2249_storage_$",
                                     "typeString": "mapping(address => struct Types.Bank storage ref)"
                                   }
                                 },
@@ -4266,7 +4189,7 @@
                                 "nodeType": "IndexAccess",
                                 "src": "4288:10:0",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_Bank_$2129_storage",
+                                  "typeIdentifier": "t_struct$_Bank_$2249_storage",
                                   "typeString": "struct Types.Bank storage ref"
                                 }
                               },
@@ -4275,13 +4198,12 @@
                               "isLValue": true,
                               "isPure": false,
                               "lValueRequested": true,
-                              "memberLocation": "4299:6:0",
                               "memberName": "status",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 2128,
+                              "referencedDeclaration": 2248,
                               "src": "4288:17:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_enum$_BankStatus_$2079",
+                                "typeIdentifier": "t_enum$_BankStatus_$2199",
                                 "typeString": "enum Types.BankStatus"
                               }
                             },
@@ -4294,10 +4216,10 @@
                                   "name": "Types",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 2153,
+                                  "referencedDeclaration": 2273,
                                   "src": "4308:5:0",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_type$_t_contract$_Types_$2153_$",
+                                    "typeIdentifier": "t_type$_t_contract$_Types_$2273_$",
                                     "typeString": "type(library Types)"
                                   }
                                 },
@@ -4306,13 +4228,12 @@
                                 "isLValue": false,
                                 "isPure": false,
                                 "lValueRequested": false,
-                                "memberLocation": "4314:10:0",
                                 "memberName": "BankStatus",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 2079,
+                                "referencedDeclaration": 2199,
                                 "src": "4308:16:0",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_enum$_BankStatus_$2079_$",
+                                  "typeIdentifier": "t_type$_t_enum$_BankStatus_$2199_$",
                                   "typeString": "type(enum Types.BankStatus)"
                                 }
                               },
@@ -4321,19 +4242,18 @@
                               "isLValue": false,
                               "isPure": true,
                               "lValueRequested": false,
-                              "memberLocation": "4325:8:0",
                               "memberName": "Inactive",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 2078,
+                              "referencedDeclaration": 2198,
                               "src": "4308:25:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_enum$_BankStatus_$2079",
+                                "typeIdentifier": "t_enum$_BankStatus_$2199",
                                 "typeString": "enum Types.BankStatus"
                               }
                             },
                             "src": "4288:45:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_enum$_BankStatus_$2079",
+                              "typeIdentifier": "t_enum$_BankStatus_$2199",
                               "typeString": "enum Types.BankStatus"
                             }
                           },
@@ -4366,7 +4286,7 @@
                                     "referencedDeclaration": 13,
                                     "src": "4374:5:0",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2129_storage_$",
+                                      "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2249_storage_$",
                                       "typeString": "mapping(address => struct Types.Bank storage ref)"
                                     }
                                   },
@@ -4390,7 +4310,7 @@
                                   "nodeType": "IndexAccess",
                                   "src": "4374:10:0",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_Bank_$2129_storage",
+                                    "typeIdentifier": "t_struct$_Bank_$2249_storage",
                                     "typeString": "struct Types.Bank storage ref"
                                   }
                                 },
@@ -4399,10 +4319,9 @@
                                 "isLValue": true,
                                 "isPure": false,
                                 "lValueRequested": false,
-                                "memberLocation": "4385:4:0",
                                 "memberName": "name",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 2117,
+                                "referencedDeclaration": 2237,
                                 "src": "4374:15:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_string_storage",
@@ -4438,7 +4357,6 @@
                             "isPure": false,
                             "kind": "functionCall",
                             "lValueRequested": false,
-                            "nameLocations": [],
                             "names": [],
                             "nodeType": "FunctionCall",
                             "src": "4353:37:0",
@@ -4460,10 +4378,10 @@
                                 "name": "Types",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2153,
+                                "referencedDeclaration": 2273,
                                 "src": "4454:5:0",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_Types_$2153_$",
+                                  "typeIdentifier": "t_type$_t_contract$_Types_$2273_$",
                                   "typeString": "type(library Types)"
                                 }
                               },
@@ -4472,13 +4390,12 @@
                               "isLValue": false,
                               "isPure": false,
                               "lValueRequested": false,
-                              "memberLocation": "4460:10:0",
                               "memberName": "BankStatus",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 2079,
+                              "referencedDeclaration": 2199,
                               "src": "4454:16:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_enum$_BankStatus_$2079_$",
+                                "typeIdentifier": "t_type$_t_enum$_BankStatus_$2199_$",
                                 "typeString": "type(enum Types.BankStatus)"
                               }
                             },
@@ -4487,13 +4404,12 @@
                             "isLValue": false,
                             "isPure": true,
                             "lValueRequested": false,
-                            "memberLocation": "4471:8:0",
                             "memberName": "Inactive",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 2078,
+                            "referencedDeclaration": 2198,
                             "src": "4454:25:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_enum$_BankStatus_$2079",
+                              "typeIdentifier": "t_enum$_BankStatus_$2199",
                               "typeString": "enum Types.BankStatus"
                             }
                           },
@@ -4530,7 +4446,7 @@
                                 "referencedDeclaration": 13,
                                 "src": "3980:5:0",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2129_storage_$",
+                                  "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2249_storage_$",
                                   "typeString": "mapping(address => struct Types.Bank storage ref)"
                                 }
                               },
@@ -4554,7 +4470,7 @@
                               "nodeType": "IndexAccess",
                               "src": "3980:10:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Bank_$2129_storage",
+                                "typeIdentifier": "t_struct$_Bank_$2249_storage",
                                 "typeString": "struct Types.Bank storage ref"
                               }
                             },
@@ -4563,13 +4479,12 @@
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": true,
-                            "memberLocation": "3991:6:0",
                             "memberName": "status",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 2128,
+                            "referencedDeclaration": 2248,
                             "src": "3980:17:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_enum$_BankStatus_$2079",
+                              "typeIdentifier": "t_enum$_BankStatus_$2199",
                               "typeString": "enum Types.BankStatus"
                             }
                           },
@@ -4582,10 +4497,10 @@
                                 "name": "Types",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 2153,
+                                "referencedDeclaration": 2273,
                                 "src": "4000:5:0",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_Types_$2153_$",
+                                  "typeIdentifier": "t_type$_t_contract$_Types_$2273_$",
                                   "typeString": "type(library Types)"
                                 }
                               },
@@ -4594,13 +4509,12 @@
                               "isLValue": false,
                               "isPure": false,
                               "lValueRequested": false,
-                              "memberLocation": "4006:10:0",
                               "memberName": "BankStatus",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 2079,
+                              "referencedDeclaration": 2199,
                               "src": "4000:16:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_enum$_BankStatus_$2079_$",
+                                "typeIdentifier": "t_type$_t_enum$_BankStatus_$2199_$",
                                 "typeString": "type(enum Types.BankStatus)"
                               }
                             },
@@ -4609,19 +4523,18 @@
                             "isLValue": false,
                             "isPure": true,
                             "lValueRequested": false,
-                            "memberLocation": "4017:6:0",
                             "memberName": "Active",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 2077,
+                            "referencedDeclaration": 2197,
                             "src": "4000:23:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_enum$_BankStatus_$2079",
+                              "typeIdentifier": "t_enum$_BankStatus_$2199",
                               "typeString": "enum Types.BankStatus"
                             }
                           },
                           "src": "3980:43:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_enum$_BankStatus_$2079",
+                            "typeIdentifier": "t_enum$_BankStatus_$2199",
                             "typeString": "enum Types.BankStatus"
                           }
                         },
@@ -4654,7 +4567,7 @@
                                   "referencedDeclaration": 13,
                                   "src": "4062:5:0",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2129_storage_$",
+                                    "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2249_storage_$",
                                     "typeString": "mapping(address => struct Types.Bank storage ref)"
                                   }
                                 },
@@ -4678,7 +4591,7 @@
                                 "nodeType": "IndexAccess",
                                 "src": "4062:10:0",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_Bank_$2129_storage",
+                                  "typeIdentifier": "t_struct$_Bank_$2249_storage",
                                   "typeString": "struct Types.Bank storage ref"
                                 }
                               },
@@ -4687,10 +4600,9 @@
                               "isLValue": true,
                               "isPure": false,
                               "lValueRequested": false,
-                              "memberLocation": "4073:4:0",
                               "memberName": "name",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 2117,
+                              "referencedDeclaration": 2237,
                               "src": "4062:15:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_string_storage",
@@ -4726,7 +4638,6 @@
                           "isPure": false,
                           "kind": "functionCall",
                           "lValueRequested": false,
-                          "nameLocations": [],
                           "names": [],
                           "nodeType": "FunctionCall",
                           "src": "4043:35:0",
@@ -4748,10 +4659,10 @@
                               "name": "Types",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 2153,
+                              "referencedDeclaration": 2273,
                               "src": "4142:5:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_type$_t_contract$_Types_$2153_$",
+                                "typeIdentifier": "t_type$_t_contract$_Types_$2273_$",
                                 "typeString": "type(library Types)"
                               }
                             },
@@ -4760,13 +4671,12 @@
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
-                            "memberLocation": "4148:10:0",
                             "memberName": "BankStatus",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 2079,
+                            "referencedDeclaration": 2199,
                             "src": "4142:16:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_enum$_BankStatus_$2079_$",
+                              "typeIdentifier": "t_type$_t_enum$_BankStatus_$2199_$",
                               "typeString": "type(enum Types.BankStatus)"
                             }
                           },
@@ -4775,13 +4685,12 @@
                           "isLValue": false,
                           "isPure": true,
                           "lValueRequested": false,
-                          "memberLocation": "4159:6:0",
                           "memberName": "Active",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 2077,
+                          "referencedDeclaration": 2197,
                           "src": "4142:23:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_enum$_BankStatus_$2079",
+                            "typeIdentifier": "t_enum$_BankStatus_$2199",
                             "typeString": "enum Types.BankStatus"
                           }
                         },
@@ -4886,7 +4795,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_BankStatus_$2079",
+                    "typeIdentifier": "t_enum$_BankStatus_$2199",
                     "typeString": "enum Types.BankStatus"
                   },
                   "typeName": {
@@ -4895,18 +4804,14 @@
                     "pathNode": {
                       "id": 279,
                       "name": "Types.BankStatus",
-                      "nameLocations": [
-                        "3796:5:0",
-                        "3802:10:0"
-                      ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 2079,
+                      "referencedDeclaration": 2199,
                       "src": "3796:16:0"
                     },
-                    "referencedDeclaration": 2079,
+                    "referencedDeclaration": 2199,
                     "src": "3796:16:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_BankStatus_$2079",
+                      "typeIdentifier": "t_enum$_BankStatus_$2199",
                       "typeString": "enum Types.BankStatus"
                     }
                   },
@@ -5005,7 +4910,6 @@
                           "isPure": true,
                           "kind": "typeConversion",
                           "lValueRequested": false,
-                          "nameLocations": [],
                           "names": [],
                           "nodeType": "FunctionCall",
                           "src": "4781:10:0",
@@ -5069,7 +4973,6 @@
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
-                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "4766:44:0",
@@ -5104,7 +5007,7 @@
                           "referencedDeclaration": 13,
                           "src": "4821:5:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2129_storage_$",
+                            "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Bank_$2249_storage_$",
                             "typeString": "mapping(address => struct Types.Bank storage ref)"
                           }
                         },
@@ -5128,7 +5031,7 @@
                         "nodeType": "IndexAccess",
                         "src": "4821:10:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Bank_$2129_storage",
+                          "typeIdentifier": "t_struct$_Bank_$2249_storage",
                           "typeString": "struct Types.Bank storage ref"
                         }
                       },
@@ -5137,10 +5040,9 @@
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
-                      "memberLocation": "4832:8:0",
                       "memberName": "kycCount",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2125,
+                      "referencedDeclaration": 2245,
                       "src": "4821:19:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint16",
@@ -5228,18 +5130,18 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.8.19+commit.7dd6d404.Emscripten.clang"
+    "version": "0.8.4+commit.c7e474f2.Emscripten.clang"
   },
   "networks": {
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xC140bEb6f1FF6Aee4641242fC9f447dE65E7F67D",
-      "transactionHash": "0x157f009d1bc93cf179cb8de3c836a19fe7c032688dca6c4228b141d3b0402a1c"
+      "address": "0x04c251Fe4530D04DDf1beF1A17D0dB296cE71abF",
+      "transactionHash": "0x643a9e0e6edf32ebf4754f92cd8706c2b32c2a4e03574eef171d8cfd1385d3d2"
     }
   },
   "schemaVersion": "3.4.13",
-  "updatedAt": "2023-04-06T16:12:42.036Z",
+  "updatedAt": "2023-05-07T03:18:23.997Z",
   "networkType": "ethereum",
   "devdoc": {
     "author": "Suresh Konakanchi",

@@ -1,16 +1,16 @@
 {
   "contractName": "Helpers",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"author\":\"Suresh Konakanchi\",\"details\":\"Library for managing all the helper functions\",\"kind\":\"dev\",\"methods\":{},\"title\":\"Helpers\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Helpers.sol\":\"Helpers\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Helpers.sol\":{\"keccak256\":\"0x7da8f842dd148dacae8b7a2e2f1231c4890ccd1fd4651d83d44f2e073fdfb7ee\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://8bb126eb7370f578d6c95db87ffc60397cd51f3ca47e273610be2c5e433dfd7f\",\"dweb:/ipfs/QmbKUAS18MNSnGcN8ZGofki3NXuuGZAjZgJfUA3V4VLdmp\"]}},\"version\":1}",
-  "bytecode": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea264697066735822122001a0040b5cb1cc50beb5778918958dcedadb5602471006d88f158b0cc443685b64736f6c63430008130033",
-  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea264697066735822122001a0040b5cb1cc50beb5778918958dcedadb5602471006d88f158b0cc443685b64736f6c63430008130033",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"author\":\"Suresh Konakanchi\",\"details\":\"Library for managing all the helper functions\",\"kind\":\"dev\",\"methods\":{},\"title\":\"Helpers\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Helpers.sol\":\"Helpers\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Helpers.sol\":{\"keccak256\":\"0x7da8f842dd148dacae8b7a2e2f1231c4890ccd1fd4651d83d44f2e073fdfb7ee\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://8bb126eb7370f578d6c95db87ffc60397cd51f3ca47e273610be2c5e433dfd7f\",\"dweb:/ipfs/QmbKUAS18MNSnGcN8ZGofki3NXuuGZAjZgJfUA3V4VLdmp\"]}},\"version\":1}",
+  "bytecode": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220b6968f4282b420f055bfe8ddf6e86def645ea2488f2770cd5b2ab383f3c9d5a464736f6c63430008040033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea2646970667358221220b6968f4282b420f055bfe8ddf6e86def645ea2488f2770cd5b2ab383f3c9d5a464736f6c63430008040033",
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [],
   "sourceMap": "222:2353:2:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;222:2353:2;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "222:2353:2:-:0;;;;;;;;",
   "source": "// SPDX-License-Identifier: GPL-3.0\r\npragma experimental ABIEncoderV2;\r\npragma solidity >=0.4.25 <0.9.0;\r\n\r\n/**\r\n * @title Helpers\r\n * @author Suresh Konakanchi\r\n * @dev Library for managing all the helper functions\r\n */\r\nlibrary Helpers {\r\n    /**\r\n     * @dev List of customers, who are linked to the current bank. Data will be sent in pages to avoid the more gas fee\r\n     * @param pageNumber page number for which data is needed (1..2..3....n)\r\n     * @param users_ User Id's who are linked to the requested bank\r\n     * @return pages Total pages available\r\n     * @return pageLength_ Length of the current page\r\n     * @return startIndex_ Starting index of the current page\r\n     * @return endIndex_ Ending index of the current page\r\n     */\r\n    function getIndexes(uint256 pageNumber, address[] memory users_)\r\n        internal\r\n        pure\r\n        returns (\r\n            uint256 pages,\r\n            uint256 pageLength_,\r\n            uint256 startIndex_,\r\n            uint256 endIndex_\r\n        )\r\n    {\r\n        uint256 reminder_ = users_.length % 25;\r\n        pages = users_.length / 25;\r\n        if (reminder_ > 0) pages++;\r\n\r\n        pageLength_ = 25;\r\n        startIndex_ = 25 * (pageNumber - 1);\r\n        endIndex_ = 25 * pageNumber;\r\n\r\n        if (pageNumber > pages) {\r\n            // Page requested is not existing\r\n            pageLength_ = 0;\r\n            endIndex_ = 0;\r\n        } else if (pageNumber == pages && reminder_ > 0) {\r\n            // Last page where we don't had 25 records\r\n            pageLength_ = reminder_;\r\n            endIndex_ = users_.length;\r\n        }\r\n    }\r\n\r\n    /**\r\n     * @notice Internal function which doesn't alter any stage or read any data\r\n     * Used to compare the string operations. Little costly in terms of gas fee\r\n     * @param a string-1 that is to be compared\r\n     * @param b string-2 that is to be compared\r\n     * @return boolean value to say if both strings matched or not\r\n     */\r\n    function compareStrings(string memory a, string memory b)\r\n        internal\r\n        pure\r\n        returns (bool)\r\n    {\r\n        return (keccak256(abi.encodePacked((a))) ==\r\n            keccak256(abi.encodePacked((b))));\r\n    }\r\n\r\n    /**\r\n     * @notice Internal function used to concatenate two addresses.\r\n     * @param a address-1\r\n     * @param b address-2 that needs to be appended\r\n     * @return string value after concatenating\r\n     */\r\n    function append(address a, address b)\r\n        internal\r\n        pure\r\n        returns (string memory)\r\n    {\r\n        return string(abi.encodePacked(a, b));\r\n    }\r\n}\r\n",
-  "sourcePath": "C:\\Users\\alokk\\Desktop\\learning blockchain\\kyc2\\blockchain\\contracts\\Helpers.sol",
+  "sourcePath": "C:\\Users\\alokk\\Desktop\\Learning\\learning blockchain\\kyc2\\blockchain\\contracts\\Helpers.sol",
   "ast": {
     "absolutePath": "project:/contracts/Helpers.sol",
     "exportedSymbols": {
@@ -48,7 +48,6 @@
       {
         "abstract": false,
         "baseContracts": [],
-        "canonicalName": "Helpers",
         "contractDependencies": [],
         "contractKind": "library",
         "documentation": {
@@ -134,7 +133,6 @@
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
-                      "memberLocation": "1049:6:2",
                       "memberName": "length",
                       "nodeType": "MemberAccess",
                       "src": "1042:13:2",
@@ -219,7 +217,6 @@
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
-                        "memberLocation": "1086:6:2",
                         "memberName": "length",
                         "nodeType": "MemberAccess",
                         "src": "1079:13:2",
@@ -836,7 +833,6 @@
                               "isLValue": false,
                               "isPure": false,
                               "lValueRequested": false,
-                              "memberLocation": "1577:6:2",
                               "memberName": "length",
                               "nodeType": "MemberAccess",
                               "src": "1570:13:2",
@@ -1246,7 +1242,6 @@
                                 "isLValue": false,
                                 "isPure": true,
                                 "lValueRequested": false,
-                                "memberLocation": "2108:12:2",
                                 "memberName": "encodePacked",
                                 "nodeType": "MemberAccess",
                                 "src": "2104:16:2",
@@ -1261,7 +1256,6 @@
                               "isPure": false,
                               "kind": "functionCall",
                               "lValueRequested": false,
-                              "nameLocations": [],
                               "names": [],
                               "nodeType": "FunctionCall",
                               "src": "2104:21:2",
@@ -1296,7 +1290,6 @@
                           "isPure": false,
                           "kind": "functionCall",
                           "lValueRequested": false,
-                          "nameLocations": [],
                           "names": [],
                           "nodeType": "FunctionCall",
                           "src": "2094:32:2",
@@ -1365,7 +1358,6 @@
                                 "isLValue": false,
                                 "isPure": true,
                                 "lValueRequested": false,
-                                "memberLocation": "2157:12:2",
                                 "memberName": "encodePacked",
                                 "nodeType": "MemberAccess",
                                 "src": "2153:16:2",
@@ -1380,7 +1372,6 @@
                               "isPure": false,
                               "kind": "functionCall",
                               "lValueRequested": false,
-                              "nameLocations": [],
                               "names": [],
                               "nodeType": "FunctionCall",
                               "src": "2153:21:2",
@@ -1415,7 +1406,6 @@
                           "isPure": false,
                           "kind": "functionCall",
                           "lValueRequested": false,
-                          "nameLocations": [],
                           "names": [],
                           "nodeType": "FunctionCall",
                           "src": "2143:32:2",
@@ -1630,7 +1620,6 @@
                           "isLValue": false,
                           "isPure": true,
                           "lValueRequested": false,
-                          "memberLocation": "2545:12:2",
                           "memberName": "encodePacked",
                           "nodeType": "MemberAccess",
                           "src": "2541:16:2",
@@ -1645,7 +1634,6 @@
                         "isPure": false,
                         "kind": "functionCall",
                         "lValueRequested": false,
-                        "nameLocations": [],
                         "names": [],
                         "nodeType": "FunctionCall",
                         "src": "2541:22:2",
@@ -1688,7 +1676,6 @@
                     "isPure": false,
                     "kind": "typeConversion",
                     "lValueRequested": false,
-                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "2534:30:2",
@@ -1831,18 +1818,18 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.8.19+commit.7dd6d404.Emscripten.clang"
+    "version": "0.8.4+commit.c7e474f2.Emscripten.clang"
   },
   "networks": {
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x10b0939b0459494f3c3306a1c0c04913aC996fDE",
-      "transactionHash": "0xc8f050f3668d39c866eb525f15b88c5592c1edd331b20718a21aadc800826875"
+      "address": "0x7C4F0B291C91570FaAD62e452Ca4c00d8Aa6fF19",
+      "transactionHash": "0x0d1b7e8967e7df2ab415bf4bf49f8c67c70a730ad7462c0b3b5053ea015538f6"
     }
   },
   "schemaVersion": "3.4.13",
-  "updatedAt": "2023-04-06T16:12:42.028Z",
+  "updatedAt": "2023-05-07T03:18:23.986Z",
   "networkType": "ethereum",
   "devdoc": {
     "author": "Suresh Konakanchi",

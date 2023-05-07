@@ -129,6 +129,7 @@ export function ProfilePage() {
   const uplaodToIpfs = async () => {
     setSaveLoader(true);
     const jsonData = JSON.stringify(allDocs);
+    console.log("jsonData: "+jsonData);
     const result = await upload(jsonData);
     console.log("profile/index ,Hash after uploading to ipfs: "+result);
     if (result) {
