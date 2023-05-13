@@ -28,6 +28,7 @@ export type User = {
   id_: string;
   role: Role;
   status: BankStatus;
+  dataHash?: string;
 };
 
 export type Customer = {
@@ -47,6 +48,7 @@ export type Bank = {
   ifscCode: string;
   kycCount: string;
   status: BankStatus;
+  dataHash?: string;
 };
 
 export type KycRequest = {

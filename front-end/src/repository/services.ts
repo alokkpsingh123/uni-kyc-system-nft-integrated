@@ -1,16 +1,20 @@
-import { Bank, Customer, KycRequest,  User } from "./interfaces";
+import { Bank, Customer, KycRequest, User } from "./interfaces";
 import { Contract, ethers, utils } from "ethers";
 import { CONTRACT_ADDRESS } from "./config";
+import { MyNFT_ADDRESS } from "./config";
 import { getCurrentEpoch } from "../utils";
 
 declare let window: any;
 let KycContractABI = require("./KYC.json");
+let MyNFTContractABI = require("./MyNFT.json");
 
 export class KycServices {
   private static instance: KycServices;
   private _KycContract!: Contract;
+  private _NftContract!: Contract;
   private _accountAdress: string | undefined;
   static eventContract: Contract;
+  static nfteventContract: Contract;
 
   // private constructor() {
   //   this._KycContract = this.getContract(CONTRACT_ADDRESS);
@@ -46,7 +50,9 @@ export class KycServices {
       });
       this._accountAdress = accounts[0];
       this._KycContract = this.getContract(CONTRACT_ADDRESS);
+      this._NftContract = this.getContract(MyNFT_ADDRESS);
       KycServices.eventContract = this._KycContract;
+      KycServices.nfteventContract = this._NftContract;
       return true;
     } catch (error) {
       console.log(error);
@@ -58,34 +64,52 @@ export class KycServices {
     return await this.checkedWallet();
   }
 
-
-
   private getContract(contractAddress: string) {
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const signer = provider.getSigner();
     return new ethers.Contract(contractAddress, KycContractABI["abi"], signer);
   }
 
+  private getNFTContract(contractAddress: string) {
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    const signer = provider.getSigner();
+    return new ethers.Contract(
+      contractAddress,
+      MyNFTContractABI["abi"],
+      signer
+    );
+  }
+
+  /* NFT method*/
+
+  async mint(recipientAddress: string, tokenURI: string) {
+    try {
+      await this.ethEnabled();
+      const res = await this._NftContract.mintNFT(recipientAddress, tokenURI);
+      return res;
+    } catch (error) {
+      throw error;
+    }
+  }
+
   /* admin methods */
 
   async getcheckAddress(metaAddress: string) {
-    try{
+    try {
       await this.ethEnabled();
       const res = await this._KycContract.checkAddress(metaAddress);
       return res;
-
-    }catch(error){
+    } catch (error) {
       throw error;
     }
   }
 
   async setaddAddress(metaAddress: string) {
-    try{
+    try {
       await this.ethEnabled();
       const res = await this._KycContract.addAddress(metaAddress);
       return res;
-
-    }catch(error){
+    } catch (error) {
       throw error;
     }
   }
@@ -248,6 +272,19 @@ export class KycServices {
       await this.ethEnabled();
       const secondsSinceEpoch = getCurrentEpoch();
       const res = await this._KycContract.updateDatahash(
+        hash,
+        secondsSinceEpoch
+      );
+      return res;
+    } catch (error) {
+      throw error;
+    }
+  }
+  async addDataHash(hash: string) {
+    try {
+      await this.ethEnabled();
+      const secondsSinceEpoch = getCurrentEpoch();
+      const res = await this._KycContract.addDataHash(
         hash,
         secondsSinceEpoch
       );

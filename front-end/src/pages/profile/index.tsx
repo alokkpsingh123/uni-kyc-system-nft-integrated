@@ -29,6 +29,7 @@ import { useApi } from "../../hooks/useApi";
 import { Customer, KycServices } from "../../repository";
 import { ConfirmAction } from "./components/confirm-action";
 import { DocumentSkeleton } from "./components/skeleton";
+import { useNavigate } from "react-router-dom";
 
 type docsType = {
   id: string;
@@ -59,6 +60,7 @@ export function ProfilePage() {
   const [loader, setLoader] = useState<boolean>(true);
   const [noDocMessage, setNoDocMessage] = useState<boolean>(false);
   const [saveLoader, setSaveLoader] = useState<boolean>(false);
+  let navigate = useNavigate();
 
   async function handleFileChange(e: React.ChangeEvent<HTMLInputElement>) {
     if (e.target.files) {
@@ -129,18 +131,19 @@ export function ProfilePage() {
   const uplaodToIpfs = async () => {
     setSaveLoader(true);
     const jsonData = JSON.stringify(allDocs);
-    console.log("jsonData: "+jsonData);
+    console.log("jsonData: " + jsonData);
     const result = await upload(jsonData);
-    console.log("profile/index ,Hash after uploading to ipfs: "+result);
+    console.log("profile/index ,Hash after uploading to ipfs: " + result);
     if (result) {
-      updateDatahash(result.path);
+      await updateDatahash(result.path);
       listenToDahaHashEvent();
     }
     setSaveLoader(false);
+    navigate("/dashboard");
   };
 
   useEffect(() => {
-    console.log("profile/index, mydata :"+ myData);
+    console.log("profile/index, mydata :" + myData);
     if (myData.dataHash) {
       (async () => {
         try {
@@ -170,7 +173,7 @@ export function ProfilePage() {
       setLoader(true);
       const data = await getCustomerDetails(id_);
       if (data) {
-        console.log("Data Hash: ",data);
+        console.log("Data Hash: ", data);
         setMyData(data);
       }
     })();
@@ -220,7 +223,8 @@ export function ProfilePage() {
           p="8"
           mt="16"
           borderRadius={"10"}
-          position={"relative"}>
+          position={"relative"}
+        >
           {loader && (
             <VStack space="50" justifyContent={"center"} alignItems="center">
               <Heading>Please wait...</Heading>
@@ -231,27 +235,30 @@ export function ProfilePage() {
               <HStack
                 alignItems={"center"}
                 justifyContent="space-between"
-                mb="4">
+                mb="4"
+              >
                 <HStack
                   flexDir={["column", "row"]}
-                  alignItems={["flex-start", "center"]}>
+                  alignItems={["flex-start", "center"]}
+                >
                   <Avatar
                     my="4"
                     bg="green.500"
                     source={{
                       uri: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
                     }}
-                    size={["md", "xl"]}>
+                    size={["md", "xl"]}
+                  >
                     AJ
                   </Avatar>
                   <Pressable
                     onHoverIn={() => setUserAddress(id_)}
-                    onHoverOut={() => setUserAddress(truncateString(id_))}>
+                    onHoverOut={() => setUserAddress(truncateString(id_))}
+                  >
                     <CopyToClipboard
                       text={id_}
-                      onCopy={() =>
-                        toastSuccess("Address copied successfully")
-                      }>
+                      onCopy={() => toastSuccess("Address copied successfully")}
+                    >
                       <Heading size="md" ml={["1", "5"]}>
                         {userAddress}
                       </Heading>
@@ -261,7 +268,8 @@ export function ProfilePage() {
                 <Button
                   bgColor="blueGray.800"
                   _hover={{ bgColor: "blueGray.600" }}
-                  onPress={() => setShowEditModal(true)}>
+                  onPress={() => setShowEditModal(true)}
+                >
                   Edit Profile
                 </Button>
               </HStack>
@@ -286,7 +294,8 @@ export function ProfilePage() {
         </Box>
         <VStack w={["90vw", "70vw"]} mt="16">
           <HStack alignItems={"flex-start"} mb="12" space={5}>
-            <Heading color={"white"}>Documents</Heading>{console.log("profile/index, alldoc :"+ allDocs)}
+            <Heading color={"white"}>Documents</Heading>
+            {console.log("profile/index, alldoc :" + allDocs)}
             {allDocs.length !== docsRequired.length && (
               <IconButton
                 size="lg"
@@ -330,7 +339,8 @@ export function ProfilePage() {
                 }}
                 accessibilityLabel="Select a position for Menu"
                 mr={["0", "4"]}
-                mb={["4", "0"]}>
+                mb={["4", "0"]}
+              >
                 {docList.map((doc) => (
                   <Select.Item key={doc} label={doc} value={doc} />
                 ))}

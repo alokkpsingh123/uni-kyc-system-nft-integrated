@@ -27,7 +27,6 @@ declare global {
   }
 }
 
-
 type UserDetails = {
   name: string;
   email: string;
@@ -36,27 +35,20 @@ type UserDetails = {
 };
 
 export function AddPage() {
-  // const Web3 = require('web3');
-  // const abi = require('C:\\Users\\alokk\\Desktop\\Learning\\learning blockchain\\kyc2\\front-end\\src\\contracts\\KYC.json');
-  // const web3 = new Web3(window.ethereum);
-  // const contract = new web3.eth.Contract(abi, '0x10458deDD54310640eC61376BC9a85BDdF52650B');
-  // console.log("contract");
-  // console.log(contract);
-  // console.log(web3.eth.getBlockNumber());
-
-  
-  
   const [userDetails, setUserDetails] = useState<UserDetails>(
     {} as UserDetails
   );
   const [notes, setNotes] = useState<string>("");
   const [loading, setLoading] = useState(false);
-  const [msg,setMsg]=useState(false);
   let navigate = useNavigate();
 
-  
-
-  const { addKycRequest, getAllBankCustomerList, getcheckAddress,setaddAddress } = useApi();
+  const {
+    addKycRequest,
+    getAllBankCustomerList,
+    getcheckAddress,
+    updateDatahash,
+    getCustomerDetails,
+  } = useApi();
   const {
     state: { pageNo },
   } = useAuthContext();
@@ -80,29 +72,18 @@ export function AddPage() {
     }
     return true;
   }
-  const Text1=()=><Text>KYC of the user is done</Text>
-  async function checkmask(){
-    console.log(userDetails);
-    console.log(userDetails.id_);
 
-    if(await getcheckAddress(userDetails.id_)){
-      setMsg(true);
-    }else{
-      await setaddAddress(userDetails.id_);
+  async function checkmask() {
+    if (await getcheckAddress(userDetails.id_)) {
+      return true;
     }
-  
-    // var meta:string=userDetails.id_;
-    // if(userDetails && userDetails.id_ && userDetails.id_.length === 41)
-    // {
-    //   //call backend to verify mask is present or not
-    //   //if present return true else false
-    //   setMsg(true);
-    // }
-    
+    return false;
   }
+
   async function addCustomer() {
+    const isExisting = await checkmask();
     try {
-      if (validate()) {
+      if (!isExisting && validate()) {
         setLoading(true);
         const time = Math.floor(new Date().getTime() / 1000.0);
         const customer: Customer = {
@@ -114,8 +95,40 @@ export function AddPage() {
         const data = { customer, time, notes };
         await addKycRequest(data);
         // listenToEvent();
-        setUserDetails({ email: "", mobileNumber: "", name: "", id_: "" });   
+        setUserDetails({ email: "", mobileNumber: "", name: "", id_: "" });
         navigate("/dashboard");
+      } else if (isExisting) {
+        const result = await getCustomerDetails(userDetails.id_);
+        console.log(result);
+        let newUser;
+        if (
+          (result?.dataHash,
+          result?.dataUpdatedOn,
+          result?.email,
+          result?.id_,
+          result?.kycVerifiedBy,
+          result?.mobileNumber,
+          result?.name)
+        ) {
+          newUser = {
+            dataHash: '',
+            dataUpdatedOn: 0,
+            email: result.email,
+            id_: result.id_,
+            kycVerifiedBy: result.kycVerifiedBy,
+            mobileNumber: result.mobileNumber,
+            name: result.name,
+          };
+          const customer: Customer = { ...newUser };
+          const time = Math.floor(new Date().getTime() / 1000.0);
+          const data = { customer, time, notes };
+          await addKycRequest(data);
+          toastSuccess("Users KYC is already done.");
+          navigate("/dashboard");
+        }
+        else{
+          toastError('Some error occured. We are working on it')
+        }
       }
     } catch (error) {
       console.log(error);
@@ -190,15 +203,12 @@ export function AddPage() {
               <Input
                 onChangeText={(text) => {
                   setUserDetails((curr) => ({ ...curr, id_: text }));
-                  checkmask();
                 }}
                 value={userDetails.id_}
                 placeholder="0x2D8706E94E187c4E1806a8F5b4cxas5137460784D"
                 color="blueGray.900"
                 borderColor={"blueGray.900"}
               />
-              {msg && <Text1/>}
-             
             </FormControl>
             <FormControl w={["100%", "100%"]}>
               <FormControl.Label>

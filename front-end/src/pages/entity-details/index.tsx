@@ -45,10 +45,10 @@ export function EntityDetails() {
   const { getCustomerDetails } = useApi();
   const { getDataFromIpfs } = useIpfs();
   const { id } = useParams();
-  async function getUserData(data: string) {
+  async function getUserData(id: string) {
     try {
       setLoading(true);
-      const result = await getCustomerDetails(data);
+      const result = await getCustomerDetails(id);
       result && setData(result);
     } catch (error) {
       console.log(error);
@@ -125,7 +125,7 @@ export function EntityDetails() {
                     my="4"
                     bg="green.500"
                     source={{
-                      uri: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+                      uri: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80",
                     }}
                     size={["md", "xl"]}
                   >

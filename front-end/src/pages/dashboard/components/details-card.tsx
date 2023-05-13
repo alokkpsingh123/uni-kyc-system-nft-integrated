@@ -38,7 +38,8 @@ export const DetailsCard = ({ item }: { item: KycRequest }) => {
   };
 
   const dataHashCheck = () => {
-    if (item.dataHash.length === 0) {
+    console.log(item.dataHash)
+    if (!item.dataHash) {
       toastError(
         "No documents available, atleast one document needed for action"
       );

@@ -26,7 +26,8 @@ export function ConfirmAction({
   id: string;
 }) {
   const [notes, setNotes] = useState<string>("");
-  const { updateKycVerification, reRequestForKycRequest } = useApi();
+  const { updateKycVerification, reRequestForKycRequest, setaddAddress } =
+    useApi();
 
   useEffect(() => {
     modalVisible && scroll();
@@ -43,6 +44,7 @@ export function ConfirmAction({
           isVerified: operation === "accept" ? true : false,
           notes,
         });
+        await setaddAddress(id);
       }
     } catch (error) {
       console.log(error);

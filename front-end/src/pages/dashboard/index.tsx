@@ -30,6 +30,7 @@ export const Dashboard = () => {
     searchBanks,
     handlePaginationCustomer,
     getBankKycRequests,
+    addDatahash,
   } = useApi();
   const {
     state: { data, fetchedData, totalPageNumber, pageNo },
@@ -43,6 +44,17 @@ export const Dashboard = () => {
       setSearchResult({} as KycRequest);
     }
   }, [searchText]);
+
+  useEffect(() => {
+    async function update() {
+      if (data && data[0]?.dataHash) {
+        console.log("==>1", data[0].dataHash);
+        await addDatahash(data[0].dataHash);
+        console.log("==>2", data[0].dataHash);
+      }
+    }
+    update();
+  }, [data]);
 
   useEffect(() => {
     const { search } = state;
@@ -98,7 +110,8 @@ export const Dashboard = () => {
             textTransform={"capitalize"}
             fontWeight={"semibold"}
             fontSize={"lg"}
-            color="white">
+            color="white"
+          >
             My Dashboard
           </Text>
           <HStack space={10} flexDirection={["column", "row"]}>
@@ -118,12 +131,14 @@ export const Dashboard = () => {
             alignItems={"center"}
             justifyContent={"space-between"}
             flexDirection={["column", "row"]}
-            mb={5}>
+            mb={5}
+          >
             <Text
               textTransform={"capitalize"}
               fontWeight={"semibold"}
               fontSize={"lg"}
-              color="white">
+              color="white"
+            >
               My Individual Cases
             </Text>
             <SearchBox

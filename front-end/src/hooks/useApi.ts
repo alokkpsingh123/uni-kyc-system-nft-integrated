@@ -44,31 +44,34 @@ export function useApi() {
     }
   }, []);
 
-  const getcheckAddress = useCallback(
-    async(addressMeta: string)=>{
-      try{
-        const data = await apiInstance.getcheckAddress(addressMeta);
-        return data;
+  const getcheckAddress = useCallback(async (addressMeta: string) => {
+    try {
+      const data = await apiInstance.getcheckAddress(addressMeta);
+      return data;
+    } catch (error) {
+      console.log(error);
+    }
+  }, []);
 
-      }catch(error){
+  const mint = useCallback(
+    async (recipientAddress: string, tokenURI: string) => {
+      try {
+        const data = await apiInstance.mint(recipientAddress, tokenURI);
+        return data;
+      } catch (error) {
         console.log(error);
       }
     },
     []
   );
-
-  const setaddAddress = useCallback(
-    async(addressMeta: string)=>{
-      try{
-        const data = await apiInstance.setaddAddress(addressMeta);
-        return data;
-
-      }catch(error){
-        console.log(error);
-      }
-    },
-    []
-  );
+  const setaddAddress = useCallback(async (addressMeta: string) => {
+    try {
+      const data = await apiInstance.setaddAddress(addressMeta);
+      return data;
+    } catch (error) {
+      console.log(error);
+    }
+  }, []);
 
   const updateBankDetails = useCallback(
     async (updatedDetails: { id: string; email: string; name: string }) => {
@@ -131,15 +134,13 @@ export function useApi() {
     }
   }, []);
 
-  
-
   const getCustomerDetails = useCallback(async (id: string) => {
     try {
       const data = await apiInstance.getCustomerDetails(id);
       return data;
     } catch (error) {
       console.log(error);
-      toastError("Error while fetching customers details");
+      // toastError("Error while fetching customers details");
     }
   }, []);
 
@@ -296,6 +297,15 @@ export function useApi() {
       } else {
         toastError("Error while updating data hash, please try again!");
       }
+    }
+  }, []);
+
+  const addDatahash = useCallback(async (hash: string) => {
+    try {
+      const res = await apiInstance.addDataHash(hash);
+      return res;
+    } catch (error) {
+      console.log(error);
     }
   }, []);
 
@@ -499,6 +509,7 @@ export function useApi() {
     actionOnKycRequest,
     updateProfile,
     updateDatahash,
+    addDatahash,
     removerDatahashPermission,
     searchBanks,
     getUserDetails,
