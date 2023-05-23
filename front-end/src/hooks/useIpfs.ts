@@ -2,11 +2,9 @@ import { create, IPFSHTTPClient } from "ipfs-http-client";
 import { toastError } from "../utils";
 import { useState } from "react";
 import { createAlchemyWeb3 } from "@alch/alchemy-web3";
-require("dotenv").config();
-const contract = require("../contracts/MyNFT.json");
+import { useApi } from "./useApi";
 
-const API_URL =
-  "https://polygon-mumbai.g.alchemy.com/v2/u0IyO9EqQSn-jLUyVNzlbijt8GnJ2ixk";
+require("dotenv").config();
 
 const projectId = "2O441yrdmRZqcjNOG3WrDdk1llH";
 const projectSecret = "a99460b1210c3701882d372da01aa1a3";
@@ -14,14 +12,15 @@ const auth =
   "Basic " + Buffer.from(projectId + ":" + projectSecret).toString("base64");
 
 export const useIpfs = () => {
-  const [image, setImage] = useState("");
-  const [description, setDescription] = useState("");
+  // const [image, setImage] = useState("");
+  // const [description, setDescription] = useState("");
+  const { mint } = useApi();
   //   console.log(process.env.API_URL);
   // const web3 = createAlchemyWeb3(API_URL);
   // const contractAddress = "0x4E675cA8903c43e67eEA700e250097eAd1D40171";
   // const nft = new web3.eth.Contract(contract.abi, contractAddress);
 
-// console.log(web3.eth.getBlockNumber());
+  // console.log(web3.eth.getBlockNumber());
 
   let ipfs: IPFSHTTPClient | undefined;
   (() => {
@@ -44,31 +43,41 @@ export const useIpfs = () => {
     try {
       const result = await (ipfs as IPFSHTTPClient).add(data);
       console.log(result.path);
-      setImage(`https://ipfs.infura.io/ipfs/${result.path}`);
+      // setImage(`https://ipfs.infura.io/ipfs/${result.path}`);
       return result;
     } catch (error) {
       toastError("Failed to upload");
     }
   };
 
-  //   const createNFT = async () => {
-  //     if (!image || !description) return;
-  //     try {
-  //       const result = await (ipfs as IPFSHTTPClient).add(
-  //         JSON.stringify({ image, description })
-  //       );
-  //       mint(result);
-  //     } catch (error) {
-  //       console.log("ipfs uri upload error: ", error);
-  //     }
-  //   };
+  const createNFT = async (
+    recipient: string,
+    name: string,
+    imageUrl: string
+  ) => {
+    if (!imageUrl || !name) return;
+    try {
+      const result = await (ipfs as IPFSHTTPClient).add(
+        JSON.stringify({ name, imageUrl })
+      );
+      mintFn(result, recipient);
+    } catch (error) {
+      console.log("ipfs uri upload error: ", error);
+    }
+  };
 
-  //   const mint = async (result: any) => {
-  //     const uri = `https://ipfs.infura.io/ipfs/${result.path}`;
-  //     // mint nft
-  //     // await (await nft.mint(uri)).wait();
-  //     // get tokenId of new nft
-  //   };
+  const mintFn = async (result: any, recipient: string) => {
+    try {
+      const uri: string = `https://ipfs.infura.io/ipfs/${result.path}`;
+      // mint nft
+      const tokenId = await mint(recipient, uri);
+      return tokenId;
+      // get tokenId of new nft
+    } catch (error) {
+      console.log("Failed to mint the nft");
+      toastError("Failed to mint the NFT");
+    }
+  };
 
   //`https://cors-anywhere.herokuapp.com/https://ipfs.infura.io/ipfs/${path}`
   const getDataFromIpfs = async (path: string) => {
@@ -92,7 +101,7 @@ export const useIpfs = () => {
   return {
     upload,
     getDataFromIpfs,
-    // createNFT,
+    createNFT,
   };
 };
 

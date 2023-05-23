@@ -13,9 +13,8 @@ contract MyNFT is ERC721URIStorage, Ownable {
 
     constructor() ERC721("KYC NFT", "KYC") {}
 
-    function mintNFT(address recipient, string memory tokenURI)
-        public
-        onlyOwner
+    function mint(address recipient, string memory tokenURI)
+        external
         returns (uint256)
     {
         _tokenIds.increment();

@@ -45,16 +45,16 @@ export const Dashboard = () => {
     }
   }, [searchText]);
 
-  useEffect(() => {
-    async function update() {
-      if (data && data[0]?.dataHash) {
-        console.log("==>1", data[0].dataHash);
-        await addDatahash(data[0].dataHash);
-        console.log("==>2", data[0].dataHash);
-      }
-    }
-    update();
-  }, [data]);
+  // useEffect(() => {
+  //   async function update() {
+  //     if (data && data[0]?.dataHash) {
+  //       console.log("==>1", data[0].dataHash);
+  //       await addDatahash(data[0].dataHash);
+  //       console.log("==>2", data[0].dataHash);
+  //     }
+  //   }
+  //   update();
+  // }, [data]);
 
   useEffect(() => {
     const { search } = state;

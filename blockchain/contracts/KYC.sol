@@ -422,6 +422,7 @@ contract KYC is Customers, Banks {
         string memory hash_,
         uint256 currentTime_
     ) public isValidCustomer(msg.sender) {
+        updatedatahash(hash_, currentTime_);
         address[] memory banksList_ = customerbanks[msg.sender];
         for (uint256 i = 0; i < banksList_.length; i++) {
             string memory reqId_ = Helpers.append(banksList_[i], msg.sender);

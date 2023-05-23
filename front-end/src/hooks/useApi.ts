@@ -6,6 +6,7 @@ import {
 } from "../contexts/auth-context";
 import { FetchedDataType } from "../contexts/auth-context/types";
 import { Bank, BankStatus, Customer, KycServices, User } from "../repository";
+import { NftServices } from "../nftrepo";
 import { toastError, toastSuccess } from "../utils";
 
 const rejectErrorCheck = (error: any) =>
@@ -14,6 +15,7 @@ const rejectErrorCheck = (error: any) =>
 export function useApi() {
   const { dispatch } = useAuthContext();
   const apiInstance = KycServices.getInstance();
+  const nftInstance = NftServices.getInstance();
   const [listLoading, setListLoading] = useState(false);
   const getBankList = useCallback(async (currentPage: number) => {
     try {
@@ -56,10 +58,15 @@ export function useApi() {
   const mint = useCallback(
     async (recipientAddress: string, tokenURI: string) => {
       try {
-        const data = await apiInstance.mint(recipientAddress, tokenURI);
+        
+        const data = await nftInstance.mint(recipientAddress, tokenURI);
+
+        if(data){ toastSuccess("KYC NFT Minted Successfully");}
+        else{ toastError("KYC NFT is not minted");}
         return data;
       } catch (error) {
         console.log(error);
+        // return false;
       }
     },
     []
@@ -519,5 +526,6 @@ export function useApi() {
     listLoading,
     getcheckAddress,
     setaddAddress,
+    mint,
   };
 }

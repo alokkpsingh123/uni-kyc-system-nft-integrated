@@ -53,7 +53,7 @@ export function ProfilePage() {
     },
   } = useAuthContext();
   const [userAddress, setUserAddress] = useState(truncateString(id_));
-  const { upload, getDataFromIpfs } = useIpfs();
+  const { upload, getDataFromIpfs, createNFT } = useIpfs();
   const { getCustomerDetails, updateDatahash } = useApi();
   const [showSaveButton, setSaveButton] = useState<boolean>(false);
   const [showUploadModal, setShowUploadModal] = useState(false);
@@ -131,11 +131,17 @@ export function ProfilePage() {
   const uplaodToIpfs = async () => {
     setSaveLoader(true);
     const jsonData = JSON.stringify(allDocs);
-    console.log("jsonData: " + jsonData);
     const result = await upload(jsonData);
+    console.log("Datahash: " + result?.path);
+    const url = `https://ipfs.infura.io/ipfs/${result?.path}`;
     console.log("profile/index ,Hash after uploading to ipfs: " + result);
     if (result) {
       await updateDatahash(result.path);
+      console.log(id_)
+      console.log(url);
+      await createNFT(id_, "passport", url);
+      // console.log("tokenId" + tokenId);
+
       listenToDahaHashEvent();
     }
     setSaveLoader(false);

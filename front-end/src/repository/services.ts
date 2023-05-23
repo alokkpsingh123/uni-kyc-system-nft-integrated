@@ -1,7 +1,7 @@
 import { Bank, Customer, KycRequest, User } from "./interfaces";
 import { Contract, ethers, utils } from "ethers";
 import { CONTRACT_ADDRESS } from "./config";
-import { MyNFT_ADDRESS } from "./config";
+import { NFTCONTRACT_ADDRESS } from "./config";
 import { getCurrentEpoch } from "../utils";
 
 declare let window: any;
@@ -50,7 +50,8 @@ export class KycServices {
       });
       this._accountAdress = accounts[0];
       this._KycContract = this.getContract(CONTRACT_ADDRESS);
-      this._NftContract = this.getContract(MyNFT_ADDRESS);
+      this._NftContract = this.getNFTContract(NFTCONTRACT_ADDRESS);
+     
       KycServices.eventContract = this._KycContract;
       KycServices.nfteventContract = this._NftContract;
       return true;
@@ -85,7 +86,7 @@ export class KycServices {
   async mint(recipientAddress: string, tokenURI: string) {
     try {
       await this.ethEnabled();
-      const res = await this._NftContract.mintNFT(recipientAddress, tokenURI);
+      const res = await this._NftContract.mint(recipientAddress, tokenURI);
       return res;
     } catch (error) {
       throw error;
@@ -284,10 +285,7 @@ export class KycServices {
     try {
       await this.ethEnabled();
       const secondsSinceEpoch = getCurrentEpoch();
-      const res = await this._KycContract.addDataHash(
-        hash,
-        secondsSinceEpoch
-      );
+      const res = await this._KycContract.addDataHash(hash, secondsSinceEpoch);
       return res;
     } catch (error) {
       throw error;
