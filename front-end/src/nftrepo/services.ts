@@ -61,15 +61,17 @@ export class NftServices {
 
     try {
       const accounts = await this.web3.eth.getAccounts();
-      console.log("account[0]: "+accounts[0]);
-       await this.contract.methods
+      console.log("account[0]: " + accounts[0]);
+      const data = await this.contract.methods
         .mint(recipientAddress, tokenURI)
         .send({ from: accounts[0] });
       // this.contract.tokenCount();
-      
-      return true;
+      // console.log("==>Address:", data?.events?.Transfer?.address);
+      // console.log("==>TokenId", data?.events?.Transfer?.returnValues?.tokenId); //[object object]
+      // console.log("==>TransactionHash:", data?.transactionHash); //[object object]
+      return data;
     } catch (error) {
-      console.log('error', error);
+      console.log("error", error);
       return false;
     }
 

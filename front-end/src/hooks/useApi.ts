@@ -58,11 +58,21 @@ export function useApi() {
   const mint = useCallback(
     async (recipientAddress: string, tokenURI: string) => {
       try {
-        
         const data = await nftInstance.mint(recipientAddress, tokenURI);
+        console.log("==>Address:", data?.events?.Transfer?.address);
+        console.log(
+          "==>TokenId",
+          data?.events?.Transfer?.returnValues?.tokenId
+        ); //[object object]
+        console.log("==>TransactionHash:", data?.transactionHash); //[object object]
 
-        if(data){ toastSuccess("KYC NFT Minted Successfully");}
-        else{ toastError("KYC NFT is not minted");}
+        if (data) {
+          toastSuccess(
+            `KYC NFT Minted Successfully.TOKENID: ${data?.events?.Transfer?.returnValues?.tokenId}`
+          );
+        } else {
+          toastError("KYC NFT is not minted");
+        }
         return data;
       } catch (error) {
         console.log(error);

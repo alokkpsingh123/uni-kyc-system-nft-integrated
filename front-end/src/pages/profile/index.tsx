@@ -60,12 +60,15 @@ export function ProfilePage() {
   const [loader, setLoader] = useState<boolean>(true);
   const [noDocMessage, setNoDocMessage] = useState<boolean>(false);
   const [saveLoader, setSaveLoader] = useState<boolean>(false);
+  const [image , setImage] = useState<any>("");
+
   let navigate = useNavigate();
 
   async function handleFileChange(e: React.ChangeEvent<HTMLInputElement>) {
     if (e.target.files) {
       const file = e.target.files[0];
       const base64 = await convertToBase64(file);
+      setImage(file);
       setFileUrl(base64);
       setDocument("");
       setShowModal(false);
@@ -98,7 +101,7 @@ export function ProfilePage() {
     setShowFirstImage(true);
     setDocument(allDocs.find((i) => i.id === id)?.type || "");
     const updatedAllDocs = allDocs.filter((doc: docsType) => doc.id !== id);
-    if (updatedAllDocs.length === allDocs.length) {
+    if (updatedAllDocs?.length === allDocs?.length) {
       console.log("working");
       const result = allDocs.forEach(
         (leftValue) =>
@@ -122,8 +125,8 @@ export function ProfilePage() {
 
   useEffect(() => {
     setDocList(() => {
-      return docsRequired.filter(
-        (i: string) => !allDocs.map((i) => i.type).includes(i)
+      return docsRequired?.filter(
+        (i: string) => !allDocs?.map((i) => i.type).includes(i)
       );
     });
   }, [allDocs]);
@@ -133,13 +136,13 @@ export function ProfilePage() {
     const jsonData = JSON.stringify(allDocs);
     const result = await upload(jsonData);
     console.log("Datahash: " + result?.path);
-    const url = `https://ipfs.infura.io/ipfs/${result?.path}`;
+    const url = `https://unikyc.infura-ipfs.io/ipfs/${result?.path}`;
     console.log("profile/index ,Hash after uploading to ipfs: " + result);
     if (result) {
       await updateDatahash(result.path);
-      console.log(id_)
+      console.log(id_);
       console.log(url);
-      await createNFT(id_, "passport", url);
+      await createNFT(id_, allDocs[0].type, url);
       // console.log("tokenId" + tokenId);
 
       listenToDahaHashEvent();
@@ -302,7 +305,7 @@ export function ProfilePage() {
           <HStack alignItems={"flex-start"} mb="12" space={5}>
             <Heading color={"white"}>Documents</Heading>
             {console.log("profile/index, alldoc :" + allDocs)}
-            {allDocs.length !== docsRequired.length && (
+            {allDocs?.length !== docsRequired?.length && (
               <IconButton
                 size="lg"
                 p="0"
@@ -314,7 +317,7 @@ export function ProfilePage() {
                 }
               />
             )}
-            {allDocs.length > 0 && (
+            {allDocs?.length > 0 && (
               <IconButton
                 p="0"
                 mt="1.5"
@@ -347,7 +350,7 @@ export function ProfilePage() {
                 mr={["0", "4"]}
                 mb={["4", "0"]}
               >
-                {docList.map((doc) => (
+                {docList?.map((doc) => (
                   <Select.Item key={doc} label={doc} value={doc} />
                 ))}
               </Select>
@@ -368,9 +371,9 @@ export function ProfilePage() {
                 <DocumentSkeleton />
               </>
             )}
-            {allDocs.length !== 0 &&
+            {allDocs?.length !== 0 &&
               loader === false &&
-              allDocs.map(({ id, documentUrl, type }, idx) => (
+              allDocs?.map(({ id, documentUrl, type }, idx) => (
                 <Card
                   key={id}
                   id={id}
@@ -379,14 +382,14 @@ export function ProfilePage() {
                   documentUrl={documentUrl}
                   type={type}
                   setImage={
-                    showFirstImage || allDocs.length > 1
+                    showFirstImage || allDocs?.length > 1
                       ? null
                       : (id: string) => handlefirstDocImage(id)
                   }
                 />
               ))}
 
-            {myData && !loader && noDocMessage && allDocs.length === 0 && (
+            {myData && !loader && noDocMessage && allDocs?.length === 0 && (
               <Text color="white" fontSize={"2xl"} textAlign="center">
                 {showModal ? "" : "No Documents Found"}
               </Text>

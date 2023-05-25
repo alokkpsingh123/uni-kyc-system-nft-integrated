@@ -9,7 +9,7 @@ require("dotenv").config();
 const projectId = "2O441yrdmRZqcjNOG3WrDdk1llH";
 const projectSecret = "a99460b1210c3701882d372da01aa1a3";
 const auth =
-  "Basic " + Buffer.from(projectId + ":" + projectSecret).toString("base64");
+  "Basic " + Buffer.from(projectId + ":" + projectSecret,'utf8').toString('base64');
 
 export const useIpfs = () => {
   // const [image, setImage] = useState("");
@@ -50,15 +50,11 @@ export const useIpfs = () => {
     }
   };
 
-  const createNFT = async (
-    recipient: string,
-    name: string,
-    imageUrl: string
-  ) => {
-    if (!imageUrl || !name) return;
+  const createNFT = async (recipient: string, name: string, image: string) => {
+    if (!image || !name) return;
     try {
       const result = await (ipfs as IPFSHTTPClient).add(
-        JSON.stringify({ name, imageUrl })
+        JSON.stringify({ name, image })
       );
       mintFn(result, recipient);
     } catch (error) {
@@ -68,7 +64,7 @@ export const useIpfs = () => {
 
   const mintFn = async (result: any, recipient: string) => {
     try {
-      const uri: string = `https://ipfs.infura.io/ipfs/${result.path}`;
+      const uri: string = `https://unikyc.infura-ipfs.io/ipfs/${result.path}`;
       // mint nft
       const tokenId = await mint(recipient, uri);
       return tokenId;
@@ -80,12 +76,17 @@ export const useIpfs = () => {
   };
 
   //`https://cors-anywhere.herokuapp.com/https://ipfs.infura.io/ipfs/${path}`
+
+  
   const getDataFromIpfs = async (path: string) => {
     try {
       console.log(path);
-      const decode = await fetch(`https://ipfs.io/ipfs/${path}`);
-      const res = await decode.json();
+      const decode = await fetch(`https://unikyc.infura-ipfs.io/ipfs/${path}`);
+      console.log(decode.status);
+      console.log(decode);
       console.log(decode.url);
+      const res = await decode.json();
+      
       console.log(res);
       if (res) {
         return res;
